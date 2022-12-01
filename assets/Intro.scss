@@ -1,0 +1,182 @@
+
+/* 06.01. Home One Intro CSS */
+.intro-section {
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 50px 0;
+    position: relative;
+
+    // responsive
+    @media #{$tablet-device} {
+        height: 550px;
+    }
+    @media #{$large-mobile} {
+        height: 500px;
+    }
+    @media #{$small-mobile} {
+        width: 100%;
+        height: 600px;
+    }
+}
+.content-btn{
+    z-index: 10;
+    position: relative;
+    top: 41em;
+    left:10%;
+    @media #{$laptop-device}{
+        left:10%;
+        top: 30em;
+    }
+    @media #{$desktop-device}{
+        left:5%;
+        top: 30em;
+    }
+    @media #{$large-mobile, $small-mobile} {
+        left:0;
+        top: 21em;
+    }
+
+}
+.intro-content {
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+
+    .titulo{
+        font-size: 4em;
+        color: $white;
+        @media #{$small-mobile}{
+            font-size: 3em;
+        }   
+        @media #{$laptop-device}{
+            font-size: 2.5em;
+        }
+    }
+    .desc{
+        max-width: 400px;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 1;
+        color: $white;
+        @media #{$small-mobile}{
+            font-size: 20px;
+            line-height: 1;
+        }
+        @media #{$laptop-device}{
+            font-size: 1.5em;
+        }
+    }
+    .desc2{
+        max-width: 500px;
+        font-size: 20px;
+        font-weight: 200;
+        line-height: 1.2;
+        color: $white;
+        @media #{$small-mobile}{
+            font-size: 15px;
+            line-height: 1em;
+        }
+        @media #{$laptop-device}{
+            font-size: 1em;
+        }
+        
+    }
+    @media #{$small-mobile, $extra-small-mobile}{
+        .titulo{
+            font-size: 1.5em;
+            color: $white;
+        }
+    }
+}
+.intro-slider {
+    position: relative;
+
+    .main-slider-nav {
+        cursor: pointer;
+        background: rgba(0,0,0,0.25);
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        display: block;
+        text-align: center;
+        color: $white;
+        opacity: 0;
+        visibility: hidden;
+        transition: $transition;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        & i {
+            font-size: 40px;
+            line-height: 1;
+            vertical-align: middle;
+        }
+        &:hover {
+            color: $primary;
+            background: rgba(0,0,0,0.8);
+        }
+        // Responsive
+        @media #{$desktop-device, $tablet-device, $large-mobile}{
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            & i {
+                font-size: 24px;
+            }
+        }
+        &:after {
+            display: none;
+        }
+    }
+
+    .home-slider-prev {
+        left: 30px;
+    }
+    .home-slider-next {
+        right: 30px;
+    }
+    &:hover{
+        .main-slider-nav {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+  
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+.bg-cover {
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay{
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background: linear-gradient(to right,  rgba(3,15,39,0.7) 0%,rgba(3,15,39,0) 100%); 
+    }
+}
+
