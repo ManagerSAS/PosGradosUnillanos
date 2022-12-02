@@ -1,15 +1,15 @@
 <template>
-  <div>
+  <div class="font-gotham">
     <Header/>
     <MobileNavigation/>
     <Welcome/>
     <Social/>
     <About />
-    <CallToAction style="background-color: rgba(255, 125, 0, 0.1);"/>
+    <CallToAction style="background-image: url('https://res.cloudinary.com/dhl17zanz/image/upload/v1647546986/images/group-of-people-working-out-business-plan-in-an-office_2_sn1ihq_gxawh9.webp')"/>
     <PosGrados />
-    <Process style="background-color: rgba(255, 125, 0, 0.1);"/>
+    <Process style="background-color: #f2f2f2;"/>
     <Frequent />
-    <Footer style="background-color: rgba(255, 125, 0, 0.1);"/>
+    <Footer style="background-color: #141a21"/>
   </div>
 </template>
 <script>

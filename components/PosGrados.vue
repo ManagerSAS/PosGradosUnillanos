@@ -2,59 +2,67 @@
    <v-container fluid class="pt-10 pb-10">
         <v-row justify="center" align="center">
             <v-col cols="12" sm="12" md="8" lg="8" xl="8" justify="center" align="center">
-                <h3 class="titles">Nuestros Posgrados</h3>
+                <h3 class="titles ">NUESTROS PROGRAMAS <br> <span class="font-weight-light" >DE POSGRADO</span> </h3>
+                <div class="linea"></div>
             </v-col>
         </v-row>
         <v-row justify="center" align="center">
             <v-col cols="12" md="10" lg="8" sm="12">
                 <v-row justify="center" align="center"> 
-                    <v-col cols="4" sm="3" justify="center" align="center">
-                      <v-select
-                          :items="Especializacion"
-                          label="Especializacion"
-                          outlined
-                          dense
-                      ></v-select>
+                    <v-col cols="12" md="4" sm="3" justify="center" align="center">
+                      <v-btn
+                        block
+                        hide-details
+                        style="border-radius:0; background-color: #1a212f; color: white;"
+                        @click="filter('Es')"
+                      >Especializacion</v-btn>
                     </v-col>
-                    <v-col cols="4" sm="3" justify="center" align="center">
-                      <v-select
-                          :items="Maestrias"
-                          label="Maestrias"
-                          outlined
-                          dense
-                      ></v-select>
+                    <v-col cols="12" md="4" sm="3" justify="center" align="center">
+                        <v-btn
+                            block
+                            style="border-radius:0; background-color: #1a212f; color: white;"
+                            hide-details
+                            @click="filter('Ma')"
+                        >Maestrias
+                        </v-btn>
                     </v-col>
-                    <v-col cols="4" sm="3" justify="center" align="center">
-                        <v-select
-                          :items="Doctorado"
-                          label="Doctorado"
-                          outlined
-                          dense
-                      ></v-select>
+                    <v-col cols="12" md="4" sm="3" justify="center" align="center">
+                        <v-btn
+                            block
+                            hide-details
+                            @click="filter('Doc')"
+                            style="border-radius:0; background-color: #1a212f; color: white;"
+                        >Doctorado</v-btn>
                     </v-col>
                 </v-row>
             </v-col>
           </v-row>
           <v-row justify="center" align="center">
-            <v-col justify="center" align="center"  cols="12" md="10" lg="10" sm="12">
+            <v-col justify="center" align="center"  cols="12" md="11" lg="10" sm="12">
                 <v-row justify="center" align="center">
-                    <v-col justify="center" align="center" cols="12" lg="3" md="3" sm="12" v-for="({icon, title, desc}, index) in information" :key="index">
-                        <v-card justify="center" align="center" >
+                    <v-col justify="center" align="center" cols="12" lg="3" md="4" sm="12" v-for="(inf, index) in information" :key="index">
+                        <div justify="center" align="center" class="ma-5">
                             <div>
-                                <img :src="icon" class="FotoPostGrado" alt="">
+                                <v-img :src="inf.icon" class="FotoPostGrado" alt="">
+                                    <div align="start" class="contentPost ml-2 Text-PostGrado">
+                                        <div>
+                                            <h4 class="Postgrado">{{inf.title}}</h4>
+                                        </div>
+                                        <div >
+                                            <h4 class="namePosgrado">{{inf.name}}</h4 >
+                                        </div>
+                                    </div>    
+                                </v-img>
                             </div>
-                            <div class="pa-5">
-                                <div>
-                                    <p class="Text-About">{{title}}</p>
-                                </div>
-                                <div >
-                                   <p class="Text-Description">{{desc}}</p> 
-                                </div>
-                                <v-btn class="ma-2" @click="dialog == !dialog">
-                                    Ver Pensum
+                            <div class="mt-2 mb-2">
+                                <p class="Text-Description">{{inf.desc}}</p> 
+                            </div>
+                            <div align="start">
+                                <v-btn hide-details style="border-radius:0" class="pa-0" width="80%" color="#fbb03b" outlined @click="dialog == !dialog">
+                                    VER PLAN DE ESTUDIOS
                                 </v-btn>
                             </div>
-                        </v-card>
+                        </div>
                     </v-col>
                 </v-row>
             </v-col>
@@ -108,20 +116,20 @@ import VueSlickCarousel from 'vue-slick-carousel'
   export default {
     components: { VueSlickCarousel },
     data: () => ({
-        dialog: true,
-        readonly: false,
-        Especializacion: ['Foo', 'Bar', 'Fizz', 'Buzz'],
-        Maestrias: ['Foo', 'Bar', 'Fizz', 'Buzz'],
-        Doctorado: ['Foo', 'Bar', 'Fizz', 'Buzz'],
+        dialog: false,
+        infPosGrados:[],
         information: [
-            {id:'1', icon:'/BannerPc.jpg',title:'Lorem', desc:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit'},
-            {id:'2', icon:'/BannerPc.jpg',title:'Lorem', desc:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit'},
-            {id:'3', icon:'/BannerPc.jpg',title:'Lorem', desc:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit'},
-            {id:'4', icon:'/BannerPc.jpg',title:'Lorem', desc:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit'},
-            {id:'5', icon:'/BannerPc.jpg',title:'Lorem', desc:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit'},
-            {id:'6', icon:'/BannerPc.jpg',title:'Lorem', desc:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit'},
-            {id:'7', icon:'/BannerPc.jpg',title:'Lorem', desc:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit'},
-            {id:'8', icon:'/BannerPc.jpg',title:'Lorem', desc:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit'}, 
+            {id:'1', icon:'/BannerPc.jpg',type:'Es',title:'Especialización en', name:'Gestión de Proyectos', desc:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit'},
+            {id:'2', icon:'/BannerPc.jpg',type:'Es',title:'Especialización en', name:'Gestión de Proyectos', desc:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit'},
+            {id:'3', icon:'/BannerPc.jpg',type:'Ma',title:'Especialización en', name:'Gestión de Proyectos', desc:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit'},
+            {id:'4', icon:'/BannerPc.jpg',type:'Ma',title:'Especialización en', name:'Gestión de Proyectos', desc:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit'},
+            {id:'5', icon:'/BannerPc.jpg',type:'Es',title:'Especialización en', name:'Gestión de Proyectos', desc:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit'},
+            {id:'6', icon:'/BannerPc.jpg',type:'Doc',title:'Especialización en', name:'Gestión de Proyectos', desc:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit'},
+            {id:'7', icon:'/BannerPc.jpg',type:'Es',title:'Especialización en', name:'Gestión de Proyectos', desc:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit'},
+            {id:'8', icon:'/BannerPc.jpg',type:'Doc',title:'Especialización en', name:'Gestión de Proyectos', desc:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit'},
+            {id:'6', icon:'/BannerPc.jpg',type:'Doc',title:'Especialización en', name:'Gestión de Proyectos', desc:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit'},
+            {id:'7', icon:'/BannerPc.jpg',type:'Es',title:'Especialización en', name:'Gestión de Proyectos', desc:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit'},
+            {id:'8', icon:'/BannerPc.jpg',type:'Doc',title:'Especialización en', name:'Gestión de Proyectos', desc:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit'},  
         ],
         Pensum:[
             {title:'Semestre 1',materia:'materia',credit:' 10 creditos'},
@@ -170,7 +178,19 @@ import VueSlickCarousel from 'vue-slick-carousel'
                     }
                 ]
             },
-
     }),
+    created(){
+        this.infPosGrados = this.information;
+    },
+    methods:{
+        filter(typePos){
+            this.information = this.infPosGrados
+            this.information =this.information.filter(
+                inf => {
+                    return inf.type == typePos
+                }
+            )
+        }
+    }
   }
 </script>

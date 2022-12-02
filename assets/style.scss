@@ -1,10 +1,20 @@
+
 .title-form{
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 50px;
+    line-height: 0.9em;
+    font-family: 'Gotham', sans-serif;
 }
+@font-face {
+    font-family: 'Gotham', sans-serif;
+    src: url('https://fonts.cdnfonts.com/css/gotham');
+}
+.font-gotham{
+    font-family: 'Gotham', sans-serif;
+}  
 .titles{
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 30px;
 }
 .IconAbaot{
@@ -18,11 +28,9 @@
 }
 .Text-Description{
     font-size: 15px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 .response{
     font-size: 15px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 .question{
     font-weight: bold;
@@ -32,3 +40,56 @@
 .FotoPostGrado{
     width: 100%;
 }
+.bra-0{
+    border-radius: 0;
+}
+.linea{
+    color: black;
+    border-top: 5px solid black;
+    height: 1px;
+    max-width: 150px;
+    padding: 0;
+    margin: 5px auto 0 auto;
+}
+.linea-white{
+    color: white;
+    border-top: 5px solid white;
+    height: 1px;
+    max-width: 150px;
+    padding: 0;
+    margin: 5px auto 0 auto;
+}
+.Text-Border{
+    font-size: 5em;
+    color: transparent; 
+    font-weight: 900;
+    -webkit-text-stroke: 1px white;
+    @media #{$laptop-device}{
+        font-size: 4em;
+    }
+    @media #{ $desktop-device}{
+        font-size: 3.5em;
+    }
+    @media #{$tablet-device}{
+        font-size: 3em;
+    }
+    @media #{$small-mobile}{
+        font-size: 1.8em;
+    }
+}
+.Text-PostGrado{
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    line-height: normal;
+    font-size: 15px;
+}
+.Postgrado{
+    font-weight: 500;
+    font-size: 15px;
+}
+.namePosgrado{
+    font-weight: 800;
+    font-size: 15px;
+}
+

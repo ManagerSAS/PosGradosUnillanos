@@ -15,7 +15,7 @@
         display: flex;
         align-items: center;
         min-height: 100px;
-        background-color: $white;
+        background-color: white;
         // Responsive
         @media #{$tablet-device, $large-mobile}{
             min-height: 80px;
@@ -27,11 +27,11 @@
             top: 0;
             left: 0;
             right: 0;
-            background-color: #00273d !important;
+            background-color: #fbb03b !important;
             width: 100%;
             height: 80px;
             animation: headerSlideDown 0.95s ease forwards;
-            box-shadow: 0 8px 20px 0 rgba($black, 0.1);
+            box-shadow: 0 8px 20px 0 rgba(black, 0.1);
         }
     }
 
@@ -81,10 +81,10 @@
     &.header-light {
         & .header-login {
             & a {
-                color: $white;
+                color: white;
 
                 &:hover {
-                    color: $white;
+                    color: white;
                 }
             }
         }
@@ -111,7 +111,7 @@
     .header-search-toggle {
         line-height: 1;
         display: flex;
-        color: $white;
+        color: white;
         background-color: transparent;
         border: none;
 
@@ -123,7 +123,7 @@
         }
 
         &:hover {
-            color: $primary;
+            color: red;
         }
         @media #{$extra-small-mobile} {
             padding-right: 10px;
@@ -153,7 +153,7 @@
                 line-height: 1.375;
                 display: block;
                 padding: 40px 15px;
-                color: $white;
+                color: white;
 
                 & .menu-text {
                     display: flex;
@@ -168,7 +168,6 @@
             &.has-children {
                 & > a {
                     &::after {
-                        font-family: $fontAwesome5Pro;
                         font-size: 8px;
                         font-weight: 900;
                         margin-left: 10px;
@@ -179,7 +178,7 @@
 
             &:hover {
                 & > a {
-                    color: $primary;
+                    color: red;
                 }
 
                 & > .sub-menu, .mega-menu {
@@ -205,8 +204,8 @@
         transition: all 0.4s ease 0.2s;
         opacity: 0;
         border-radius: 10px;
-        background-color: $white;
-        box-shadow: 0 2px 29px rgba($black, 0.05);
+        background-color: white;
+        box-shadow: 0 2px 29px rgba(black, 0.05);
         &::before{
             content: "";
             position: absolute;
@@ -218,7 +217,7 @@
             height: 0;
             border-style: solid;
             border-width: 0 7.5px 10px 7.5px;
-            border-color: transparent transparent $white transparent;
+            border-color: transparent transparent white transparent;
         }
         & li {
             position: relative;
@@ -230,7 +229,7 @@
                 display: block;
                 padding: 8px 30px;
                 white-space: nowrap;
-                color: $body-color;
+                color: #444;
 
                 & .menu-text {
                     display: flex;
@@ -241,7 +240,6 @@
             &.has-children {
                 & > a {
                     &::after {
-                        font-family: $fontAwesome5Pro;
                         font-size: 8px;
                         font-weight: 900;
                         margin-left: auto;
@@ -253,7 +251,7 @@
             &:hover,
             &.active {
                 & > a {
-                    color: $primary;
+                    color: red;
                 }
             }
 
@@ -302,8 +300,8 @@
                             width: 0;
                             height: 1px;
                             content: "";
-                            transition: $transition;
-                            background-color: $primary;
+                            transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);;
+                            background-color: red;
                         }
                     }
                 }
@@ -328,12 +326,12 @@
         & > ul {
             & > li {
                 & > a {
-                    color: $white;
+                    color: white;
                 }
 
                 &:hover {
                     & > a {
-                        color: $white;
+                        color: white;
                     }
                 }
             }
@@ -345,7 +343,7 @@
                     & > a {
                         & .menu-text {
                             &::before {
-                                background-color: $white;
+                                background-color: white;
                             }
                         }
                     }
@@ -360,25 +358,25 @@
         & > ul {
             & > li {
                 & > a {
-                    color: $secondary;
+                    color: #444;
                 }
 
                 &:hover {
                     & > a {
-                        color: $primary-three;
+                        color: red;
                     }
                 }
             }
         }
 
         & .sub-menu {
-            border-bottom: 4px solid $primary-three;
+            border-bottom: 4px solid red;
             & li {
     
                 &:hover,
                 &.active {
                     & > a {
-                        color: $primary-three;
+                        color: red;
                     }
                 }
             }
@@ -390,7 +388,7 @@
                     & > a {
                         & .menu-text {
                             &::before {
-                                background-color: $primary-three;
+                                background-color: red;
                             }
                         }
                     }
@@ -433,7 +431,7 @@
                 width: 100%;
                 height: 100%;
                 content: "";
-                background-color: $white;
+                background-color: white;
             }
 
             &.icon-top,
@@ -470,7 +468,7 @@
             & i {
                 &::before,
                 &::after {
-                    background-color: $primary;
+                    background-color: red;
                 }
 
                 &.icon-top,
@@ -512,7 +510,7 @@
             & i {
                 &::before,
                 &::after {
-                    background-color: $white;
+                    background-color: white;
                 }
             }
 
@@ -520,7 +518,7 @@
                 & i {
                     &::before,
                     &::after {
-                        background-color: $white;
+                        background-color: white;
                     }
                 }
             }
@@ -585,7 +583,7 @@
             bottom: 0;
             left: 0;
             content: "";
-            background-color: rgba($secondary, 0.9);
+            background-color: rgba(#444, 0.9);
         }
 
         & .mobile-header{
@@ -615,7 +613,7 @@
                     content: "";
                     width: 24px;
                     height: 3px;
-                    background: $white;
+                    background: white;
                     transform-origin: 50% 50%;
                     transition: all .3s cubic-bezier(.645,.045,.355,1);
                 }
@@ -640,7 +638,6 @@
     height: calc(100% - 85px);
     margin: 30px;
     overflow-y: auto;
-    font-family: 'Quicksand', sans-serif;
 }
 /* 05.04 Mobile Menu CSS */
 
@@ -652,9 +649,9 @@
     visibility: hidden;
     width: 100%;
     height: 100%;
-    transition: $transition;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);;
     opacity: 0;
-    background: rgba($black, 0.7);
+    background: rgba(black, 0.7);
 }
 
 .site-main-mobile-menu-inner {
@@ -663,9 +660,9 @@
     float: right;
     width: 360px;
     height: 100%;
-    transition: $transition;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);;
     transform: translateX(100%);
-    background-color: $white-opacity-50;
+    background-color: white-opacity-50;
     // background-image: url("/images/bg/mobile-bg.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -684,13 +681,13 @@
         bottom: 0;
         left: 0;
         content: "";
-        background-color: rgba($secondary, 0.9);
+        background-color: rgba(#444, 0.9);
     }
 }
 
 #page {
     position: relative;
-    transition: $transition;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);;
 }
 
 .mobile-menu-open {
@@ -717,7 +714,7 @@
     justify-content: space-between;
     height: 80px;
     padding: 0 15px 0 30px;
-    background-color: $white;
+    background-color: white;
 }
 
 .mobile-menu-logo {
@@ -782,7 +779,7 @@
 
             & + li {
                 & > a {
-                    border-top: 1px solid rgba($white, 0.15);
+                    border-top: 1px solid rgba(white, 0.15);
                 }
             }
 
@@ -792,7 +789,7 @@
                 line-height: 1.5;
                 display: block;
                 padding: 19px 0;
-                color: $white;
+                color: white;
                 border-bottom: 1px solid transparent;
             }
 
@@ -805,7 +802,7 @@
                 justify-content: center;
                 width: 40px;
                 height: 40px;
-                color: $white;
+                color: white;
                 border-radius: 50%;
                 position: absolute;
                 background-color: transparent;
@@ -813,21 +810,21 @@
                 & i {
                     font-size: 18px;
                     line-height: 1;
-                    transition: $transition;
+                    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);;
                 }
 
                 &:hover {
-                    background-color: rgba($white, 0.2);
+                    background-color: rgba(white, 0.2);
                 }
             }
 
             &.open {
                 & > a {
-                    border-bottom-color: rgba($white, 0.15);
+                    border-bottom-color: rgba(white, 0.15);
                 }
 
                 & > .menu-toggle {
-                    background-color: rgba($white, 0.2);
+                    background-color: rgba(white, 0.2);
 
                     & i {
                         transform: rotateX(180deg);
@@ -851,10 +848,10 @@
                 font-weight: 500;
                 line-height: 1.5;
                 padding: 10px 0;
-                color: rgba($white, 0.7);
+                color: rgba(white, 0.7);
 
                 &:hover{
-                    color: $white;
+                    color: white;
                 }
             }
 
@@ -864,11 +861,11 @@
 
             &.open {
                 & > a {
-                    color: $white;
+                    color: white;
                 }
 
                 & > .menu-toggle {
-                    background-color: rgba($white, 0.2);
+                    background-color: rgba(white, 0.2);
 
                     & i {
                         transform: rotateX(180deg);
@@ -941,14 +938,13 @@
     font-size: 18px;
     font-weight: 500;
     line-height: normal;
-    color: black;
-    font-family: 'Quicksand', sans-serif;
+    color: white;
     a {
         display: block;
         margin-bottom: 5px;
-        font-family: 'Quicksand', sans-serif;
+
         text-decoration: none;
-        color: black;
+        color: white;
 
         &:last-child {
             margin-bottom: 0;
@@ -985,7 +981,7 @@
 
     & a {
         margin-right: 10px;
-        color: black;
+        color:black;
 
         & i {
             font-size: 24px;
@@ -994,20 +990,19 @@
         }
 
         &:hover {
-            color: $primary;
+            color: red;
         }
     }
 }
 .footer-widget-title {
     font-size: 18px;
-    color: black;
+    color: white;
     margin-bottom: 17px;
 }
 .footer-logo{
     margin-bottom: 30px;
 }
 .footer-section {
-    font-family: 'Quicksand', sans-serif;
     padding: 50px 0 0px;
     overflow: hidden;
     // Responsive
@@ -1019,16 +1014,15 @@
     }
 }
 .footer-widget-title {
-    font-family: 'Quicksand', sans-serif;
     font-size: 1.5em;
-    color: black;
+    color: white;
     margin-bottom: 17px;
     font-weight: bold;
 }
 .footer-widget-desc {
     font-family: 'Quicksand', sans-serif;
     font-size: .8em;
-    color: black;
+    color: white;
     margin-bottom: 17px;
 }
 
@@ -1039,6 +1033,6 @@
     text-align: center;
     padding: 20px 15px;
   
-    color: $white;
+    color: white;
     margin-bottom: 0;
 }

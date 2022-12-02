@@ -1,5 +1,5 @@
 <template>
-    <div class="header-section header-transparent" >
+    <div class="header-section header-transparent" :class="{'is-sticky': isSticky}">
         <div class="header-inner">
             <div class="container position-relative">
                 <div class="row justify-content-between align-items-center" >

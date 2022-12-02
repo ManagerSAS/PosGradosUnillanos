@@ -47,16 +47,16 @@
                         <h4 style="font-family: 'Quicksand', sans-serif;" class="footer-widget-title ">Síguenos</h4>
                         <v-row justify="center" align="center">
                             <v-col cols="2" >
-                                <v-icon color="black">mdi-whatsapp mdi-48px</v-icon>
+                                <v-icon color="white">mdi-whatsapp mdi-48px</v-icon>
                             </v-col>
                             <v-col cols="2">
-                                <v-icon color="black">mdi-facebook mdi-48px</v-icon>
+                                <v-icon color="white">mdi-facebook mdi-48px</v-icon>
                             </v-col>
                             <v-col cols="2">
-                                <v-icon color="black">mdi-instagram mdi-48px</v-icon>
+                                <v-icon color="white">mdi-instagram mdi-48px</v-icon>
                             </v-col>
                             <v-col cols="2">
-                                <v-icon color="black">mdi-web mdi-48px</v-icon>
+                                <v-icon color="white">mdi-web mdi-48px</v-icon>
                             </v-col>
                         </v-row>
                     </div>

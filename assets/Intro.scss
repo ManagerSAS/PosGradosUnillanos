@@ -45,7 +45,7 @@
 
     .titulo{
         font-size: 4em;
-        color: $white;
+        color: white;
         @media #{$small-mobile}{
             font-size: 3em;
         }   
@@ -58,7 +58,7 @@
         font-size: 25px;
         font-weight: 400;
         line-height: 1;
-        color: $white;
+        color: white;
         @media #{$small-mobile}{
             font-size: 20px;
             line-height: 1;
@@ -72,7 +72,7 @@
         font-size: 20px;
         font-weight: 200;
         line-height: 1.2;
-        color: $white;
+        color: white;
         @media #{$small-mobile}{
             font-size: 15px;
             line-height: 1em;
@@ -85,7 +85,7 @@
     @media #{$small-mobile, $extra-small-mobile}{
         .titulo{
             font-size: 1.5em;
-            color: $white;
+            color: white;
         }
     }
 }
@@ -100,10 +100,10 @@
         line-height: 100px;
         display: block;
         text-align: center;
-        color: $white;
+        color: white;
         opacity: 0;
         visibility: hidden;
-        transition: $transition;
+        transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -114,7 +114,7 @@
             vertical-align: middle;
         }
         &:hover {
-            color: $primary;
+            color: red;
             background: rgba(0,0,0,0.8);
         }
         // Responsive
@@ -161,7 +161,7 @@
 }
 
 .bg-cover {
-    background-position: top;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
