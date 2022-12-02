@@ -26,6 +26,10 @@
                             </div>
                         </div>
                     </v-col>
+                    <v-col justify="center" align="center">
+                        <img class="d-none d-lg-block d-md-block d-xl-block" src="../static/arrow.png"  width="50" alt="" srcset="">
+                        <img class="d-block d-lg-none d-md-none d-xl-none" style="transform:rotate(90deg);" src="../static/arrow.png"  width="50" alt="" srcset="">
+                    </v-col>
                     <v-col justify="center" align="center" cols="12" lg="3" md="3" sm="12" >
                         <div justify="center" align="center" class="pa-5">
                             <div>
@@ -38,6 +42,10 @@
                                <p class="Text-Description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dolorum velit</p> 
                             </div>
                         </div>
+                    </v-col>
+                    <v-col justify="center" align="center">
+                        <img class="d-none d-lg-block d-md-block d-xl-block" src="../static/arrow.png"  width="50" alt="" srcset="">
+                        <img class="d-block d-lg-none d-md-none d-xl-none" style="transform:rotate(90deg);" src="../static/arrow.png"  width="50" alt="" srcset="">
                     </v-col>
                     <v-col justify="center" align="center" cols="12" lg="3" md="3" sm="12" >
                         <div justify="center" align="center" class="pa-5">

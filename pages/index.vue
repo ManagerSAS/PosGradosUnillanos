@@ -5,11 +5,11 @@
     <Welcome/>
     <Social/>
     <About />
-    <CallToAction style="background-color: rgba(111, 111, 110, 0.2)"/>
+    <CallToAction style="background-color: rgba(255, 125, 0, 0.1);"/>
     <PosGrados />
-    <Process style="background-color: rgba(111, 111, 110, 0.2)"/>
+    <Process style="background-color: rgba(255, 125, 0, 0.1);"/>
     <Frequent />
-    <Footer style="background-color: rgba(111, 111, 110, 0.2)"/>
+    <Footer style="background-color: rgba(255, 125, 0, 0.1);"/>
   </div>
 </template>
 <script>

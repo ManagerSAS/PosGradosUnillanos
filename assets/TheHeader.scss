@@ -941,14 +941,14 @@
     font-size: 18px;
     font-weight: 500;
     line-height: normal;
-    color: $gray-100;
+    color: black;
     font-family: 'Quicksand', sans-serif;
     a {
         display: block;
         margin-bottom: 5px;
         font-family: 'Quicksand', sans-serif;
         text-decoration: none;
-        color: $gray-100;
+        color: black;
 
         &:last-child {
             margin-bottom: 0;
@@ -985,7 +985,7 @@
 
     & a {
         margin-right: 10px;
-        color: $gray-100;
+        color: black;
 
         & i {
             font-size: 24px;
@@ -1000,7 +1000,7 @@
 }
 .footer-widget-title {
     font-size: 18px;
-    color: $white;
+    color: black;
     margin-bottom: 17px;
 }
 .footer-logo{
@@ -1021,14 +1021,14 @@
 .footer-widget-title {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.5em;
-    color: $white;
+    color: black;
     margin-bottom: 17px;
     font-weight: bold;
 }
 .footer-widget-desc {
     font-family: 'Quicksand', sans-serif;
     font-size: .8em;
-    color: $white;
+    color: black;
     margin-bottom: 17px;
 }
 

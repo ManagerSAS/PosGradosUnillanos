@@ -17,7 +17,7 @@
                                 <p style="font-family: 'Quicksand', sans-serif;">Linea Gratuita PQRs: 018000918641</p><br>
                                 <p style="font-family: 'Quicksand', sans-serif;">Contacto@unillanos.edu.co</p>
                                 <p style="font-family: 'Quicksand', sans-serif;">notificacionesjudiciales@unillanos.edu.co</p> <br>
-                                <p style="font-family: 'Quicksand', sans-serif; color: #748494;">Políticas de Privacidad y Términos de Uso Estatuto sobre Propiedad Intelectual de la </p>
+                                <p style="font-family: 'Quicksand', sans-serif; ">Políticas de Privacidad y Términos de Uso Estatuto sobre Propiedad Intelectual de la </p>
                             </div>
                         </div>
                     </div>
@@ -43,23 +43,30 @@
 
                 <!-- Footer Widget Start -->
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mt-30">
-                    <div class="footer-widget">
-                        <h4 style="font-family: 'Quicksand', sans-serif;" class="footer-widget-title ">Agremiaciones</h4>
-                        
-                        <span style="font-family: 'Quicksand', sans-serif;  color: white;" >Miembros del consejo directivo nacional de la Asociación Colombiana de la Industria de la Comunicación Gráfica</span>
-                        <div class="footer-widget-content">
-                            <img src="https://res.cloudinary.com/dhl17zanz/image/upload/c_scale,h_60/v1647033742/images/logos/Andigraf_s8fnzm.png" alt="" srcset="">
-                        </div><br>
-                        <span style="font-family: 'Quicksand', sans-serif;  color: white;" >Miembros de la Federación Nacional de Comerciantes - seccional villavicencio</span>
-                        <div class="footer-widget-content ">
-                            <img src="https://res.cloudinary.com/dhl17zanz/image/upload/c_scale,h_50/v1647033742/images/logos/Fenalco_1_ihqrys.png" alt="" srcset="">
-                        </div>
+                    <div class="footer-widget" justify="center" align="center">
+                        <h4 style="font-family: 'Quicksand', sans-serif;" class="footer-widget-title ">Síguenos</h4>
+                        <v-row justify="center" align="center">
+                            <v-col cols="2" >
+                                <v-icon color="black">mdi-whatsapp mdi-48px</v-icon>
+                            </v-col>
+                            <v-col cols="2">
+                                <v-icon color="black">mdi-facebook mdi-48px</v-icon>
+                            </v-col>
+                            <v-col cols="2">
+                                <v-icon color="black">mdi-instagram mdi-48px</v-icon>
+                            </v-col>
+                            <v-col cols="2">
+                                <v-icon color="black">mdi-web mdi-48px</v-icon>
+                            </v-col>
+                        </v-row>
                     </div>
                 </div>
             </div>
-            <!-- Footer Top Widgets End -->
-
-            <!-- Footer Copyright Start -->
+            <v-row align="center" justify="center">
+                <v-col align="center" justify="center" v-for="({src}, index) in LogosRegulador" :key="index">
+                    <img height="50" :src="src" alt="">
+                </v-col>
+            </v-row>
             <div class="row">
                 <div class="col">
                     <p class="copyright white--text">&copy; 2022 Manager <i class="fa fa-heart text-danger"></i> by <a href="https://www.agenciamanager.com" target="_blank">Agencia Manager</a></p>
@@ -73,44 +80,30 @@
     export default {
         data() {
             return {
-                footerDataLineas:[
+                LogosRegulador:[
                     {
-                        navTitle: "Agencia",
-                        navUrl: "https://agenciamanager.com/" 
+                        src: "/log_gobiern.png",
                     },
                     {
-                        navTitle: "Capacitaciones",
-                        navUrl: "https://agenciamanager.com/" 
+                        src: "/logo_suit.png",
                     },
                     {
-                        navTitle: "Imprenta",
-                        navUrl: "https://agenciamanager.com/" 
-                    }
-                ],
-                footerDataServices:[
-                    {
-                        navTitle: "Diseño",
-                        navUrl: "https://agenciamanager.com/" 
+                        src: "snies.png",
                     },
                     {
-                        navTitle: "Creación de marca",
-                        navUrl: "https://agenciamanager.com/" 
+                        src: "secop.jpg",
                     },
                     {
-                        navTitle: "Desarrollo de software",
-                        navUrl: "https://agenciamanager.com/" 
+                        src: "compra-eficientew.png",
                     },
                     {
-                        navTitle: "Multimedia ",
-                        navUrl: "https://agenciamanager.com/" 
+                        src: "sigepw.png",
                     },
                     {
-                        navTitle: "Redes sociales",
-                        navUrl: "https://agenciamanager.com/" 
+                        src: "minTic_2.png",
                     },
                     {
-                        navTitle: "Protección de datos",
-                        navUrl: "https://agenciamanager.com/poticadeDatos" 
+                        src: "govco.png",
                     }
                 ]
             }

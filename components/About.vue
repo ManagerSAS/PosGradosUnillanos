@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="pt-10">
+  <v-container fluid class="pt-10 pb-10">
         <v-row justify="center" align="center">
             <v-col cols="12" sm="12" md="8" lg="8" xl="8" justify="center" align="center">
                 <h3 class="titles">¿Porqué hacer mi posgrado en Unillanos?</h3>
@@ -7,8 +7,8 @@
         </v-row>
         <v-row justify="center" align="center">
             <v-col justify="center" align="center"  cols="12" md="10" lg="8" sm="12">
-                <v-row class="mt-10" justify="center" align="center">
-                    <v-col justify="center" align="center" cols="12" lg="3" md="3" sm="12" v-for="({icon, title, desc}, index) in information" :key="index">
+                <v-row  justify="center" align="center">
+                    <v-col justify="center" align="center" cols="12" lg="4" md="4" sm="12" v-for="({icon, title, desc}, index) in information" :key="index">
                         <v-card justify="center" align="center" class="pa-5">
                             <div>
                                 <img :src="icon" class="IconAbaot" alt="">
