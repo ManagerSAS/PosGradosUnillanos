@@ -8,7 +8,7 @@
                     <div class="footer-widget">
                         <div class="footer-logo">
                             <n-link to="/">
-                                <img src="/Logo.png" width="200px" alt="Logo"/>
+                                <img src="/logo.png" width="200px" alt="Logo"/>
                             </n-link>
                         </div>
                         <div style="font-family: 'Quicksand', sans-serif;" class="footer-widget-content">

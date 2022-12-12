@@ -7,7 +7,7 @@
                 </v-col>
             </v-row>
             <div justify="center" align="center">
-                <v-btn color="#fbb03b" class="pa-5 white--text" width="350px" style="border-radius:0">
+                <v-btn color="#fbb03b" class="pa-5 white--text" width="350px" to="#contact" style="border-radius:0">
                     SOLiCITA INFORMACIÓN
                 </v-btn>
             </div>

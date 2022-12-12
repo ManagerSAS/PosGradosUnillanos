@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="pt-10 pb-10">
+  <v-container fluid id="faq" class="pt-10 pb-10">
         <v-row justify="center" align="center">
             <v-col cols="12" sm="12" md="8" lg="8" xl="8" justify="center" align="center">
                 <h3 class="titles ">PREGUNTAS<br> <span class="font-weight-light" >FRECUENTES</span></h3>
@@ -12,29 +12,110 @@
                     <v-expansion-panel 
                         accordion 
                         height="200"
-                        v-for="({pregunta,respuesta},index) in preguntas"
-                        :key="index"
                         class="text-blue-f-1em">
-                        <v-expansion-panel-header style="color:#003B4C;" >{{pregunta}}</v-expansion-panel-header>
+                        <v-expansion-panel-header style="color:#003B4C;" >1. ¿Qué requisitos debo cumplir para ingresar?</v-expansion-panel-header>
                         <v-expansion-panel-content>
-                            {{respuesta}}
+                            En cada uno de nuestros posgrados puedes encontrar el perfil de ingreso y criterios para admisión.
+                        </v-expansion-panel-content>
+                    </v-expansion-panel>
+                    <v-expansion-panel 
+                        accordion 
+                        height="200"
+                        class="text-blue-f-1em">
+                        <v-expansion-panel-header style="color:#003B4C;" >2. ¿Cuánto duran los posgrados</v-expansion-panel-header>
+                        <v-expansion-panel-content>
+                            Las especializaciones tienen una durabilidad de 2 semestres y maestrías de 4 semestres.
+                        </v-expansion-panel-content>
+                    </v-expansion-panel>
+                    <v-expansion-panel 
+                        accordion 
+                        height="200"
+                        class="text-blue-f-1em">
+                        <v-expansion-panel-header style="color:#003B4C;" >3. ¿En qué modalidad están los posgrados?</v-expansion-panel-header>
+                        <v-expansion-panel-content>
+                            Modalidad diurna presencial.
+                        </v-expansion-panel-content>
+                    </v-expansion-panel>
+                    <v-expansion-panel 
+                        accordion 
+                        height="200"
+                        class="text-blue-f-1em">
+                        <v-expansion-panel-header style="color:#003B4C;" >4. ¿Cuál es el valor de la inscripción?</v-expansion-panel-header>
+                        <v-expansion-panel-content>
+                            El valor de inscripción es de $166.700 
+                        </v-expansion-panel-content>
+                    </v-expansion-panel>
+                    <v-expansion-panel 
+                        accordion 
+                        height="200"
+                        class="text-blue-f-1em">
+                        <v-expansion-panel-header style="color:#003B4C;" >5. ¿Puedo acceder a descuentos para mi posgrado?</v-expansion-panel-header>
+                        <v-expansion-panel-content>
+                            plica desde el segundo semestre por:
+                            <ul>
+                                <li>
+                                    Descuento Electoral 10%
+                                </li>
+                                <li>
+                                    Egresados (A.S 013/2018)
+                                </li>
+                                <li>
+                                    Especialización 10%
+                                </li>
+                                <li>
+                                    Doctorado 20%
+                                </li>
+                                <li>
+                                    Como medida transitoria por el covid\n20% sobre el valor de los derechos de Matricula y derechos académicos, siempre y cuando cancele en fechas ordinarias. No es acumulable con el descuento de Egresado.
+                                </li>
+                            </ul>
+                        </v-expansion-panel-content>
+                    </v-expansion-panel>
+                    <v-expansion-panel 
+                        accordion 
+                        height="200"
+                        class="text-blue-f-1em">
+                        <v-expansion-panel-header style="color:#003B4C;" >6. ¿Cómo puedo ver el valor de mi posgrado? </v-expansion-panel-header>
+                        <v-expansion-panel-content>
+                            Consulta aquí los valores de derechos académicos de tu posgrado
+                            <a href="https://docs.google.com/spreadsheets/d/1qXhArVKpCbdgtNxs1F28cCqV0YhcJZWPQHrDz_JiMdY/edit#gid=626531751" target="_blank" rel="noopener noreferrer"> Click aquí</a> 
+                        </v-expansion-panel-content>
+                    </v-expansion-panel>
+                    <v-expansion-panel 
+                        accordion 
+                        height="200"
+                        class="text-blue-f-1em">
+                        <v-expansion-panel-header style="color:#003B4C;" >7. ¿Cómo puedo financiar mi posgrado? </v-expansion-panel-header>
+                        <v-expansion-panel-content>
+                            <ul>
+                                <li>
+                                    La universidad tiene convenio con el Banco Pichincha
+                                </li>
+                                <li>
+                                    El ICTEX. Ingrese al sitio web www.Icetex.gov.co - crédito tú eliges  - Posgrados
+                                </li>
+                            </ul>
+                        </v-expansion-panel-content>
+                    </v-expansion-panel>
+                    <v-expansion-panel 
+                        accordion 
+                        height="200"
+                        class="text-blue-f-1em">
+                        <v-expansion-panel-header style="color:#003B4C;" >8. ¿Cuáles son las fechas de inscripción? </v-expansion-panel-header>
+                        <v-expansion-panel-content>
+                            <ul>
+                                <li>
+                                    Inscripciones hasta el 27 de enero de 2023
+                                </li>
+                                <li>
+                                    Cierre del formulario de inscripción en plataforma 31 de enero 2023
+                                </li>
+                            </ul>
                         </v-expansion-panel-content>
                     </v-expansion-panel>
                 </v-expansion-panels>
-               
             </v-col>
         </v-row>
   </v-container>
 </template>
-<script>
-  export default {
-    data: () => ({
-            preguntas: [
-                {pregunta:'1. ¿Cuánto cuesta la inscripción?', respuesta:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, quidem a qui eum laudantium voluptatibus harum eaque reiciendis iusto. Laborum impedit provident repudiandae totam quam itaque recusandae, doloribus vel eos!'},
-                {pregunta:'2. ¿Cuáles son los requisitos?', respuesta:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, quidem a qui eum laudantium voluptatibus harum eaque reiciendis iusto. Laborum impedit provident repudiandae totam quam itaque recusandae, doloribus vel eos!'},
-                {pregunta:'3. ¿Cómo puedo financiar mi posgrado?', respuesta:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, quidem a qui eum laudantium voluptatibus harum eaque reiciendis iusto. Laborum impedit provident repudiandae totam quam itaque recusandae, doloribus vel eos!'},
-                {pregunta:'4. ¿Cuáles son los requisitos? ', respuesta:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, quidem a qui eum laudantium voluptatibus harum eaque reiciendis iusto. Laborum impedit provident repudiandae totam quam itaque recusandae, doloribus vel eos!'},
-            ],
-    }),
-  }
-</script>
+

@@ -5,9 +5,9 @@
                 <div class="row justify-content-between align-items-center" >
                     <!-- Header Logo Start -->
                     <div class="col-auto d-flex">
-                        <div class="header-logo ml-lg-10 mt-lg-5 ml-md-10 mt-md-5">
+                        <div class="header-logo ml-lg-10 ml-md-10 mt-md-5">
                             <n-link to="/">
-                                <img height="50" class="dark-logo" src="../static/logo.png" alt="Agency Logo"/>
+                                <img class="dark-logo" src="../static/logo.png" alt="Agency Logo"/>
                             </n-link>
                         </div>
                     </div>
@@ -25,13 +25,13 @@
                                         <n-link style="text-decoration: none" to="#featured">¿Porqué nosotros?</n-link>
                                     </li>
                                     <li>
-                                        <n-link style="text-decoration: none" to="#property">Preguntas Frecuentes</n-link>
+                                        <n-link style="text-decoration: none" to="#faq">Preguntas Frecuentes</n-link>
                                     </li>
                                     <li>
                                         <n-link style="text-decoration: none" to="#contact">Incribirse</n-link>
                                     </li>
                                     <li>
-                                        <n-link style="text-decoration: none" to="#contact">¿Cómo es el proceso?</n-link>
+                                        <n-link style="text-decoration: none" to="#process">¿Cómo es el proceso?</n-link>
                                     </li>
                                 </ul>
                             </nav>

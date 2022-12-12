@@ -18,9 +18,7 @@
     font-size: 30px;
 }
 .IconAbaot{
-    border-radius: 50%;
-    width: 150px;
-    margin: 5%;
+    width: 100px;
 }
 .Text-About{
     font-weight: bold;
@@ -61,9 +59,8 @@
 }
 .Text-Border{
     font-size: 5em;
-    color: transparent; 
+    color: white; 
     font-weight: 900;
-    -webkit-text-stroke: 1px white;
     @media #{$laptop-device}{
         font-size: 4em;
     }
@@ -92,4 +89,18 @@
     font-weight: 800;
     font-size: 15px;
 }
-
+.contenProcess{
+    width: 300px; 
+    height: 300px;
+    line-height: normal;
+}
+.Text-Description-title{
+    font-size: 18px;
+    font-weight: 500;
+    color: #00273d;
+}
+.contenCard{
+    width: 90%; 
+    height: 350px;
+    line-height: normal;
+}

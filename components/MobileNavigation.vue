@@ -21,13 +21,13 @@
                                 <n-link style="text-decoration: none" to="#featured">¿Porqué nosotros?</n-link>
                             </li>
                             <li>
-                                <n-link style="text-decoration: none" to="#property">Preguntas Frecuentes</n-link>
+                                <n-link style="text-decoration: none" to="#faq">Preguntas Frecuentes</n-link>
                             </li>
                             <li>
                                 <n-link style="text-decoration: none" to="#contact">Incribirse</n-link>
                             </li>
                             <li>
-                                <n-link style="text-decoration: none" to="#contact">¿Cómo es el proceso?</n-link>
+                                <n-link style="text-decoration: none" to="#process">¿Cómo es el proceso?</n-link>
                             </li>
                         </ul>
                     </nav>

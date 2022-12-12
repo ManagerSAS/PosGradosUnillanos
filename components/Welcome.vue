@@ -1,5 +1,5 @@
 <template>
-        <div class="intro-slider">
+        <div id="contact" class="intro-slider">
             <div class="intro-section bg-cover" style="background-image: url('/BannerPc.jpg')">
                 <v-container fluid class="intro-content ">
                     <v-form ref="formulario" autocomplete="off">
@@ -96,7 +96,7 @@
                                              style="border-radius:0" 
                                              color="white"
                                              elevation="2"
-                                             class="font-weight-black pa-5"
+                                             class="font-weight-black pa-5 font-gotham"
                                              @click="Enviar"
                                          >Enviar <br> Información</v-btn>
                                      </v-col>
@@ -137,7 +137,33 @@ import Post from './Post/Post'
         message: '',
         colorSnack: '',
         loading: false,
-        items: ['Foo', 'Bar', 'Fizz', 'Buzz'],
+        items: ["Especialización en Gestión ambiental sostenible",
+                "Especialización en ingeniería de software",
+                "Especialización en salud familiar",
+                "Especialización en producción agrícola tropical sostenible",
+                "Especialización en Gestión de proyectos",
+                "Especialización de rf y sistemas radar ",
+                "Especialización en instrumentación y control industrial",
+                "Especialización en administración en salud",
+                "Especialización epidemiología",
+                "Especialización seguridad y salud en el trabajo",
+                "Especialización en acción motriz",
+                "Especialización en acuicultura aguas continentales",
+                "Especialización en administración de negocios",
+                "Especialización en gestión de la calidad",
+                "Maestría en gestión ambiental sostenible",
+                "Maestría en sistemas sostenibles de salud- producción animal tropical",
+                "Maestría en acuicultura",
+                "Maestría en producción tropical sostenible",
+                "Maestría estudios de desarrollo local",
+                "Maestría en estudios culturales",
+                "Maestría en epidemiología",
+                "Maestría en administración de negocios",
+                "Maestría en educación",
+                "Maestría en seguridad y salud en el trabajo",
+                "Doctorado en ciencias agrarias",
+
+                ],
         NombreCompleto:'',
         Correo:'',
         NumeroCel:'',
