@@ -15,7 +15,7 @@
                                 <img :src="icon" class="IconAbaot" alt="">
                             </div>
                             <div>
-                               <p class="Text-Description" style="text-overflow: ellipsis;">{{desc | cadena}}</p> 
+                               <p class="Text-Description" style="text-overflow: ellipsis;">{{desc}}</p> 
                             </div>
                         </div>
                     </v-col>
@@ -33,10 +33,5 @@
             {icon:'/certified2.png', desc:'Tenemos calidad en docentes de investigación con proyectos de alto impacto social en cada facultad a su vez excelencia académica en procesos de cualificación a nivel de maestría o doctorado.'},
         ],
     }),
-    filters:{
-        // cadena(value){
-        //     return value.substr(0,100) 
-        // }
-    }
   }
 </script>
