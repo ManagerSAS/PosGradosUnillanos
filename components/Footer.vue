@@ -69,7 +69,7 @@
             </v-row>
             <div class="row">
                 <div class="col">
-                    <p class="copyright white--text">&copy; 2022 Manager <i class="fa fa-heart text-danger"></i> by <a href="https://www.agenciamanager.com" target="_blank">Agencia Manager</a></p>
+                    <p class="copyright white--text">&copy; 2022 <i class="fa fa-heart text-danger"></i> Desarrollado por <a href="https://www.agenciamanager.com" target="_blank" >Manager ~ El equipo para tu marca</a></p>
                 </div>
             </div>
             <!-- Footer Copyright End -->

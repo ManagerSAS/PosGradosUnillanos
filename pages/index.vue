@@ -5,10 +5,10 @@
     <Welcome/>
     <About />
     <CallToAction style="background-image: url('https://res.cloudinary.com/dhl17zanz/image/upload/v1647546986/images/group-of-people-working-out-business-plan-in-an-office_2_sn1ihq_gxawh9.webp')"/>
+    <Politicas/>
     <PosGrados />
     <Process style="background-color: #f2f2f2;"/>
     <Frequent />
-    <Politicas/>
     <Footer style="background-color: #141a21"/>
   </div>
 </template>

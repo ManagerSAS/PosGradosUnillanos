@@ -1,13 +1,15 @@
 <template>
-        <div id="contact" class="intro-slider">
-            <div class="intro-section bg-cover" style="background-image: url('/BannerPc.jpg')">
+        <div id="contact" >
+            <div class="intro-section bg-cover bg">
                 <v-container fluid class="intro-content ">
                     <v-form ref="formulario" autocomplete="off">
                         <v-row align="center" justify="center" >
-                             <v-col  align="center" justify="center" cols="12" offset-xl="5"  offset-lg="5" class="mr-lg-1 mr-md-1 pa-5 mt-15" offset-md="5" md="6" lg="4" sm="8"> 
-                                 <p class="title-form">SOLICITA MÁS <br> INFORMACIÓN</p>
+                             <v-col  align="center" justify="center" cols="12" offset-xl="5"  offset-lg="5" class="mr-lg-1 mr-md-1 pa-5 mt-15 pt-15 mt-lg-0 mt-xl-0 mt-md-0 pt-md-0 pt-lg-0 pt-xl-0" offset-md="5" md="6" lg="4" sm="8"> 
+                                <div class="pa-1">
+                                    <p class="title-form">SOLICITA MÁS <br> INFORMACIÓN</p>
+                                </div>
                                  <v-text-field
-                                     label="Nombre Completo*"
+                                     label="Nombre completo*"
                                      placeholder="Francisco "
                                      v-model="NombreCompleto"
                                      style="border-radius:0"
@@ -18,20 +20,20 @@
                                      dense
                                  ></v-text-field>
                                  <v-text-field
-                                     label="Correo Electrónico*"
+                                     label="Correo electrónico*"
                                      v-model="Correo"
+                                     :rules="emailRules"
                                      placeholder="example@example.com"
                                      class="ma-2 elevation-5"
-                                     :rules="emailRules"
                                      style="border-radius:0"
                                      hide-details
                                      solo
                                      dense
                                  ></v-text-field>
                                  <v-text-field
-                                     label="Número de Celular*"
+                                     label="Número de celular*"
                                      v-model="NumeroCel"
-                                     placeholder="3142484466r"
+                                     placeholder="3142484466"
                                      type="number"
                                      :rules="nameRules"
                                      class="ma-2 elevation-5"
@@ -41,20 +43,7 @@
                                      dense
                                  ></v-text-field>
                                  <v-row>
-                                     <v-col cols="6">
-                                         <v-text-field
-                                             label="Ciudad*"
-                                             v-model="Ciudad"
-                                             placeholder="Villavicencio"
-                                             :rules="nameRules"
-                                             class="ma-2 elevation-5"
-                                             style="border-radius:0"
-                                             hide-details
-                                             solo
-                                             dense
-                                         ></v-text-field>
-                                     </v-col>
-                                     <v-col cols="6">
+                                    <v-col cols="6">
                                          <v-text-field
                                              label="Departamento*"
                                              :rules="nameRules"
@@ -67,6 +56,19 @@
                                              dense
                                          ></v-text-field>
                                      </v-col>
+                                     <v-col cols="6">
+                                         <v-text-field
+                                             label="Ciudad*"
+                                             v-model="Ciudad"
+                                             placeholder="Villavicencio"
+                                             :rules="nameRules"
+                                             class="ma-2 elevation-5"
+                                             style="border-radius:0"
+                                             hide-details
+                                             solo
+                                             dense
+                                         ></v-text-field>
+                                     </v-col>  
                                  </v-row>
                                  <v-select
                                      :items="items"
@@ -85,10 +87,29 @@
                                          v-model="terminos"
                                          hide-details
                                          color="white"
-                                         class="shrink mr-2 mt-0"
+                                         class="mr-2 mt-0"
+                                         off-icon="mdi-circle-outline mdi-light"
+                                         on-icon="mdi-check-circle"
+                                         dense
                                      ></v-checkbox>
-                                     <div class="white--text"> Acepto terminos y condiciones*</div>
+                                     <a style="text-decoration: underline white"><div class="white--text"  @click="dialogPoliticas= true">  Acepto términos y condiciones*</div></a>
                                  </v-row>
+                                 <v-dialog
+                                    v-model="dialogPoliticas"
+                                    transition="dialog-bottom-transition"
+                                    max-width="700"
+                                >
+                                    <v-card class="pa-5"> 
+                                        <v-row justify="center" align="center">
+                                            <v-col>
+                                                <h2 class="titulos">Politica de tratamiento de datos</h2>
+                                                <div class="pa-5">De acuerdo con la Ley Estatutaria 1581 de 2.012 de Protección de Datos y el Decreto 1377 de 2.013, le informamos que sus
+                                                    datos consignados en el presente formulario serán incorporados en una base de datos de responsabilidad de UNILLANOS, siendo tratados con las siguientes finalidades: históricos, científicos, estadísticos, gestión administrativa, gestión de clientes, encuestas de opinión, prospección comercial, venta a distancia, gestión de cobros y pagos, gestión económica y contable. De igual modo, se le informa que la base de datos en la que se encuentran sus datos personales es tratada cumpliendo con las medidas de seguridad definidas en la política de tratamiento desarrollada por UNILLANOS a la cual se puede tener acceso a través del sitio web www.unillanos.edu.co/. Usted puede ejercitar los derechos de acceso, corrección, supresión, revocación o reclamo por infracción sobre sus datos, mediante escrito dirigido a UNILLANOS por correo electrónico quejasyreclamos@unillanos.edu.co, indicando en el asunto el derecho que desea ejercitar, o mediante correo ordinario remitido a la dirección: Calle 37 No. 41-02 Barzal - PBX. 60 (8) 6616900 villavicencio, Meta, Colombia
+                                                </div>
+                                            </v-col>
+                                        </v-row>
+                                    </v-card>
+                                </v-dialog>
                                  <v-row>
                                      <v-col>
                                          <v-btn
@@ -128,11 +149,19 @@
             </div>
         </div>
 </template>
+<style  lang="scss">
+.v-input--checkbox::v-deep {
+  .v-label {
+    color: rgba(0,0,0);
+  }
+}
+</style>
 <script>
 import Post from './Post/Post'
   export default {
     data: () => ({
         btn: true,
+        dialogPoliticas: false,
         snackbar: false,
         message: '',
         colorSnack: '',
@@ -185,6 +214,7 @@ import Post from './Post/Post'
             this.snackbar = true
             this.colorSnack = 'green accent-4'
             this.message = 'Se esta procesando su informacion por favor espere...'
+            const hoy = new Date();
             if(this.NombreCompleto !== '' && this.Correo !== '' && this.NumeroCel !== '' && this.Ciudad !== '' && this.Departamento !== '' &&  this.Programa !== '' && this.terminos !==false){
                 const data = {
                     NombreCompleto:this.NombreCompleto,
@@ -192,11 +222,13 @@ import Post from './Post/Post'
                     NumeroCelular:this.NumeroCel,
                     Ciudad:this.Ciudad,
                     Departamento:this.Departamento,
-                    Programa:this.Programa
+                    Programa:this.Programa,
+                    fechaRegistro: hoy.getFullYear() + '-' + ( hoy.getMonth() + 1 )  + '-' +  hoy.getDate(),
+                    horaRegistro: hoy.getHours()+ ':' + hoy.getMinutes()+ ':' + hoy.getSeconds()
                 }
-                console.log(data)
+                // console.log(data)
                 const response = await Post.SendForm(data)
-                console.log(response)
+                // console.log(response)
                 if(response.error === false){
                     this.loading = false
                     this.snackbar = true
@@ -212,6 +244,12 @@ import Post from './Post/Post'
                     this.colorSnack = 'green accent-4'
                     this.message = 'Intente nuevamente'
                 }
+            }else{
+                this.btn= true
+                this.loading = false
+                this.snackbar = true
+                this.colorSnack = 'green accent-4'
+                this.message = 'Por favor valide todos los datos'
             }
         }
     }

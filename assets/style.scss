@@ -25,7 +25,8 @@
     font-size: 20px;
 }
 .Text-Description{
-    font-size: 15px;
+    font-size: 13px;
+    line-height: normal;
 }
 .response{
     font-size: 15px;
@@ -103,4 +104,24 @@
     width: 90%; 
     height: 350px;
     line-height: normal;
+}
+.bg{
+    background-image: url('/BANNERpc.jpg');
+    @media #{$tablet-device,$small-mobile}{
+        background-image: url('/Bannercel.jpg');
+        background-size: 100% 100%;
+    }
+
+}
+.Text-Paso{
+    font-weight: 600;
+    font-size: 20px;
+    text-align: start;
+    font-family: 'Gotham', sans-serif;
+}
+.textDescripPaso{
+    text-align: start;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Gotham', sans-serif;
 }

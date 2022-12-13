@@ -8,7 +8,7 @@
             @click="dialogPoliticas= true" 
             >
           <v-icon >
-            mdi-alert-decagram-outline  mdi-24px
+            mdi-shield-alert-outline  mdi-24px
           </v-icon>
         </v-btn>
         <v-dialog

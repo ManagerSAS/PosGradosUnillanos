@@ -65,9 +65,6 @@
                                 <li>
                                     Doctorado 20%
                                 </li>
-                                <li>
-                                    Como medida transitoria por el covid\n20% sobre el valor de los derechos de Matricula y derechos académicos, siempre y cuando cancele en fechas ordinarias. No es acumulable con el descuento de Egresado.
-                                </li>
                             </ul>
                         </v-expansion-panel-content>
                     </v-expansion-panel>
@@ -75,24 +72,14 @@
                         accordion 
                         height="200"
                         class="text-blue-f-1em">
-                        <v-expansion-panel-header style="color:#003B4C;" >6. ¿Cómo puedo ver el valor de mi posgrado? </v-expansion-panel-header>
-                        <v-expansion-panel-content>
-                            Consulta aquí los valores de derechos académicos de tu posgrado
-                            <a href="https://docs.google.com/spreadsheets/d/1qXhArVKpCbdgtNxs1F28cCqV0YhcJZWPQHrDz_JiMdY/edit#gid=626531751" target="_blank" rel="noopener noreferrer"> Click aquí</a> 
-                        </v-expansion-panel-content>
-                    </v-expansion-panel>
-                    <v-expansion-panel 
-                        accordion 
-                        height="200"
-                        class="text-blue-f-1em">
-                        <v-expansion-panel-header style="color:#003B4C;" >7. ¿Cómo puedo financiar mi posgrado? </v-expansion-panel-header>
+                        <v-expansion-panel-header style="color:#003B4C;" >6. ¿Cómo puedo financiar mi posgrado? </v-expansion-panel-header>
                         <v-expansion-panel-content>
                             <ul>
                                 <li>
                                     La universidad tiene convenio con el Banco Pichincha
                                 </li>
                                 <li>
-                                    El ICTEX. Ingrese al sitio web www.Icetex.gov.co - crédito tú eliges  - Posgrados
+                                    El ICETEX. Ingrese al sitio web www.Icetex.gov.co - crédito tú eliges  - Posgrados
                                 </li>
                             </ul>
                         </v-expansion-panel-content>
@@ -101,7 +88,7 @@
                         accordion 
                         height="200"
                         class="text-blue-f-1em">
-                        <v-expansion-panel-header style="color:#003B4C;" >8. ¿Cuáles son las fechas de inscripción? </v-expansion-panel-header>
+                        <v-expansion-panel-header style="color:#003B4C;" >7. ¿Cuáles son las fechas de inscripción? </v-expansion-panel-header>
                         <v-expansion-panel-content>
                             <ul>
                                 <li>
