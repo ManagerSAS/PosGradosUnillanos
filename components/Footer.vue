@@ -46,16 +46,16 @@
                     <div class="footer-widget" justify="center" align="center">
                         <h4 class="footer-widget-title ">Síguenos</h4>
                         <v-row justify="center" align="center">
-                            <v-col cols="1" >
+                            <v-col class="px-5" cols="1" >
                                <a href="https://api.whatsapp.com/send?phone=573023179118" target="_blank" style="text-decoration: none" rel="noopener noreferrer"><v-icon color="white" href="">mdi-whatsapp mdi-36px</v-icon></a>
                             </v-col>
-                            <v-col cols="1">
+                            <v-col class="px-5" cols="1" >
                                 <a href="https://www.facebook.com/UnillanosOficial" target="_blanck" style="text-decoration: none"><v-icon color="white" >mdi-facebook mdi-36px</v-icon></a>
                             </v-col>
-                            <v-col cols="1">
+                            <v-col class="px-5" cols="1" >
                                 <a href="https://www.instagram.com/unillanos_/" target="_blank " style="text-decoration: none" rel="noopener noreferrer"><v-icon color="white">mdi-instagram mdi-36px</v-icon></a>
                             </v-col>
-                            <v-col cols="1">
+                            <v-col class="px-5" cols="1" >
                                <a href="https://www.unillanos.edu.co/?fbclid=IwAR3Pn1S0Jo8vT_pCHY5lJndTrGWBAKMHXLM20TfRkPmRwuMlM22KdfHHGA4" style="text-decoration: none" target="_blank" rel="noopener noreferrer"> <v-icon color="white">mdi-web mdi-36px</v-icon></a>
                             </v-col>
                         </v-row>

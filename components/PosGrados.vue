@@ -77,7 +77,7 @@
                             <div align="start" class="mt-2 mb-2">
                                 <p class="Text-Description">{{inf.desc | cadena}}...</p> 
                             </div>
-                            <div align="start">
+                            <div align="center">
                                 <v-btn hide-details style="border-radius:0" class="pa-0" width="200px" height="30px" color="#fbb03b" outlined dense >
                                     Descargar PDF
                                 </v-btn>

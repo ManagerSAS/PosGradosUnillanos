@@ -25,7 +25,7 @@
                             <br>
                             <div class="mr-5 ml-5">
                                 <v-row justify="center" align="start">
-                                    <p class="Text-Paso">1. Preinscríbete <br> <a href="" target="_blanck">Aquí.</a> </p>
+                                    <p class="Text-Paso">1. Preinscríbete  <a href="" target="_blanck">Aquí.</a> </p>
                                 </v-row>
                             </div>
                         </v-card>
