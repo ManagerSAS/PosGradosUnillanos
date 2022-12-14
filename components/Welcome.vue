@@ -4,7 +4,7 @@
                 <v-container fluid class="intro-content ">
                     <v-form ref="formulario" autocomplete="off">
                         <v-row align="center" justify="center" >
-                             <v-col  align="center" justify="center" cols="12" offset-xl="5"  offset-lg="5" class="mr-lg-1 mr-md-1 pa-5 mt-15 pt-15 mt-lg-0 mt-xl-0 mt-md-0 pt-md-0 pt-lg-0 pt-xl-0" offset-md="5" md="6" lg="4" sm="8"> 
+                             <v-col  align="center" justify="center" cols="12" offset-xl="6"  offset-lg="5" class="mr-lg-1 mr-md-1 pa-5 " offset-md="5" md="6" lg="4" sm="8"> 
                                 <div class="pa-1">
                                     <p class="title-form">SOLICITA MÁS <br> INFORMACIÓN</p>
                                 </div>
@@ -12,6 +12,7 @@
                                      label="Nombre completo*"
                                      placeholder="Francisco "
                                      v-model="NombreCompleto"
+                                     prepend-inner-icon="mdi-account-outline mdi-18px"
                                      style="border-radius:0"
                                      class="ma-2 elevation-5"
                                      :rules="nameRules"
@@ -22,6 +23,7 @@
                                  <v-text-field
                                      label="Correo electrónico*"
                                      v-model="Correo"
+                                     prepend-inner-icon="mdi-email-outline mdi-18px"
                                      :rules="emailRules"
                                      placeholder="example@example.com"
                                      class="ma-2 elevation-5"
@@ -35,6 +37,7 @@
                                      v-model="NumeroCel"
                                      placeholder="3142484466"
                                      type="number"
+                                     prepend-inner-icon="mdi-cellphone mdi-18px"
                                      :rules="nameRules"
                                      class="ma-2 elevation-5"
                                      style="border-radius:0"
@@ -44,22 +47,25 @@
                                  ></v-text-field>
                                  <v-row>
                                     <v-col cols="6">
-                                         <v-text-field
+                                         <v-select
                                              label="Departamento*"
                                              :rules="nameRules"
+                                             prepend-inner-icon="mdi-map-marker-outline mdi-18px"
                                              v-model="Departamento"
+                                             :items="Departamentos"
                                              placeholder="Meta"
                                              class="ma-2 elevation-5"                                
                                              style="border-radius:0"
                                              hide-details
                                              solo
                                              dense
-                                         ></v-text-field>
+                                         ></v-select>
                                      </v-col>
                                      <v-col cols="6">
                                          <v-text-field
                                              label="Ciudad*"
                                              v-model="Ciudad"
+                                             prepend-inner-icon="mdi-map-marker-outline mdi-18px"
                                              placeholder="Villavicencio"
                                              :rules="nameRules"
                                              class="ma-2 elevation-5"
@@ -74,6 +80,7 @@
                                      :items="items"
                                      label="Programa de interés*"
                                      placeholder="Programa de interés"
+                                     prepend-inner-icon="mdi-script-text-outline mdi-18px"
                                      v-model="Programa"
                                      :rules="nameRules"
                                      class="ma-2 elevation-5"
@@ -149,13 +156,6 @@
             </div>
         </div>
 </template>
-<style  lang="scss">
-.v-input--checkbox::v-deep {
-  .v-label {
-    color: rgba(0,0,0);
-  }
-}
-</style>
 <script>
 import Post from './Post/Post'
   export default {
@@ -166,33 +166,67 @@ import Post from './Post/Post'
         message: '',
         colorSnack: '',
         loading: false,
-        items: ["Especialización en Gestión ambiental sostenible",
-                "Especialización en ingeniería de software",
-                "Especialización en salud familiar",
-                "Especialización en producción agrícola tropical sostenible",
-                "Especialización en Gestión de proyectos",
-                "Especialización de rf y sistemas radar ",
-                "Especialización en instrumentación y control industrial",
-                "Especialización en administración en salud",
-                "Especialización epidemiología",
-                "Especialización seguridad y salud en el trabajo",
-                "Especialización en acción motriz",
-                "Especialización en acuicultura aguas continentales",
-                "Especialización en administración de negocios",
-                "Especialización en gestión de la calidad",
-                "Maestría en gestión ambiental sostenible",
-                "Maestría en sistemas sostenibles de salud- producción animal tropical",
-                "Maestría en acuicultura",
-                "Maestría en producción tropical sostenible",
-                "Maestría estudios de desarrollo local",
-                "Maestría en estudios culturales",
-                "Maestría en epidemiología",
-                "Maestría en administración de negocios",
-                "Maestría en educación",
-                "Maestría en seguridad y salud en el trabajo",
-                "Doctorado en ciencias agrarias",
-
+        items: ["Especialización en Gestión Ambiental Sostenible",
+                "Especialización en Ingeniería de Software",
+                "Especialización en Salud Familiar",
+                "Especialización en Producción Agrícola Tropical Sostenible",
+                "Especialización en Gestión de Proyectos",
+                "Especialización en RF y Sistemas Radar ",
+                "Especialización en Finanzas",
+                "Especialización en Instrumentación y Control Industrial",
+                "Especialización en Administración en Salud",
+                "Especialización en Epidemiología",
+                "Especialización en Seguridad y Salud en el Trabajo",
+                "Especialización en Acción Motriz",
+                "Especialización en Acuicultura Aguas Continentales",
+                "Especialización en Administración de Negocios",
+                "Especialización en Gestión de la Calidad",
+                "Maestría en gestión Ambiental sostenible",
+                "Maestría en Sistemas Sostenibles de Salud - Producción Animal Tropical",
+                "Maestría en Acuicultura",
+                "Maestría en Producción Tropical Sostenible",
+                "Maestría en Estudios de Desarrollo Local",
+                "Maestría en Estudios Culturales",
+                "Maestría en Epidemiología",
+                "Maestría en Administración de Negocios",
+                "Maestría en Educación",
+                "Maestría en Seguridad y Salud en el Trabajo",
+                "Doctorado en Ciencias Agrarias",
                 ],
+        Departamentos:[
+            "Amazonas",
+            "Antioquia",
+            "Arauca",
+            "Atlántico",
+            "Bolívar",
+            "Boyacá",
+            "Caldas",
+            "Caquetá",
+            "Casanare",
+            "Cauca",
+            "Cesar",
+            "Chocó",
+            "Córdoba",
+            "Cundinamarca",
+            "Guainía",
+            "Guaviare",
+            "Huila",
+            "La Guajira",
+            "Magdalena",
+            "Meta",
+            "Nariño",
+            "Norte de Santander",
+            "Putumayo",
+            "Quindío",
+            "Risaralda",
+            "San Andrés y Providencia",
+            "Santander",
+            "Sucre",
+            "Tolima",
+            "Valle del Cauca",
+            "Vaupés",
+            "Vichada"
+        ],
         NombreCompleto:'',
         Correo:'',
         NumeroCel:'',
@@ -215,7 +249,7 @@ import Post from './Post/Post'
             this.colorSnack = 'green accent-4'
             this.message = 'Se esta procesando su informacion por favor espere...'
             const hoy = new Date();
-            if(this.NombreCompleto !== '' && this.Correo !== '' && this.NumeroCel !== '' && this.Ciudad !== '' && this.Departamento !== '' &&  this.Programa !== '' && this.terminos !==false){
+            if(this.NombreCompleto !== '' && this.Correo !== '' && this.NumeroCel !== '' && this.Ciudad !== '' && this.Departamento !== '' &&  this.Programa !== '' && this.terminos == true){
                 const data = {
                     NombreCompleto:this.NombreCompleto,
                     Correo:this.Correo,
@@ -248,7 +282,7 @@ import Post from './Post/Post'
                 this.btn= true
                 this.loading = false
                 this.snackbar = true
-                this.colorSnack = 'green accent-4'
+                this.colorSnack = 'red accent-4'
                 this.message = 'Por favor valide todos los datos'
             }
         }

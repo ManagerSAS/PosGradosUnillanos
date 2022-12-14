@@ -148,7 +148,7 @@
             position: relative;
 
             & > a {
-                font-size: 16px;
+                font-size: 15px;
                 font-weight: 500;
                 line-height: 1.375;
                 display: block;
@@ -935,9 +935,9 @@
 
 // Footer
 .footer-widget-content {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
-    line-height: normal;
+    line-height: 1px;
     color: white;
     a {
         display: block;
@@ -1028,7 +1028,7 @@
 
 .copyright {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 25px;
     text-align: center;
     padding: 20px 15px;

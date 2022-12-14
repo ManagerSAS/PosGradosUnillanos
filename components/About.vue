@@ -15,10 +15,9 @@
                                 <div class="pt-10 pb-5">
                                     <img :src="icon" class="IconAbaot" alt="">
                                 </div>
-                                <div>
-                                    <h3>{{title}}</h3>
+                                <div class="px-6">
+                                    <h3 class="Title">{{title}}</h3>
                                     <p class="Text-Description" style="text-overflow: ellipsis;">{{desc}}</p> 
-                                    
                                 </div>
                             </div>
                         </VueSlickCarousel>
@@ -28,15 +27,15 @@
         </v-row>
   </v-container>
 </template>
-<style lang="scss">
+<style >
 .slick-prev:before {
     content: url('../static/right.png');
-    //  color: #395730 !important; 
+    /* //  color: #395730 !important;  */
      width: 15px;
   }
 .slick-next:before {
     content: url('../static/left.png');
-    // color: #395730 !important; 
+    /* // color: #395730 !important;  */
     /* font-size: 30px; */
 }
 </style>
@@ -53,57 +52,60 @@ import VueSlickCarousel from 'vue-slick-carousel'
             {icon:'/user.png', title:'¡Te enseñan doctores!', desc:'Contamos con más de 100 doctores de orden local, regional, nacional e internacional para alcanzar una oferta académica de calidad para la Orinoquia'},
             {icon:'/certified2.png',title:'Estamos categorizados por Colciencias',  desc:'Más del 80% de nuestros doctores son categorizados por Colciencias.'},
             {icon:'/certified2.png',title:'Promovemos la investigación',  desc:'Tenemos más de 10 investigadores senior con proyectos de alto impacto social y excelencia académica en procesos de cualificación.'},
+            {icon:'/certified1.png', title:'¡Somos la Universidad más grande de la región!', desc:'El campus Barcelona, ubicado a 12 km del centro de la ciudad, abarca una extensión de 43.2 Has, y la Sede San Antonio, de 2.67 Has, situada en sector céntrico de la capital.'},
+            {icon:'/certified1.png', title:'Tenemos sede en Granada', desc:'En nuestra sede Boquemonte ya se encuentra disponible la especialización en Gestión de Proyectos para el municipio de Granada.'},
             {icon:'/certified2.png',title:'Somos la única universidad con doctorado',  desc:'Reconocido por el ministerio con registro calificado. SNIES 102256'},
+            {icon:'/certified2.png',title:'Somos la universidad de media Colombia',  desc:'Con más de 600 profesionales en la modalidad de formación de posgrados'},
         ],
         settings: {
-                "dots": true,
-                "autoplay": true,
-                "infinite": true,
-                "arrow":true,
-                "autoplaySpeed": 4000,
-                "slidesToShow": 3,
-                "slidesToScroll": 1,
-                "responsive": [
-                    {
-                    "breakpoint": 1024,
-                        "settings": {
-                            "slidesToShow": 3,
-                            "slidesToScroll": 1,
-                            "infinite": true,
-                            "dots": true
-                        }
-                    },
-                    {
-                    "breakpoint": 414,
-                        "settings": {
-                            "arrows": false,
-                            "slidesToShow": 1,
-                            "slidesToScroll": 1,
-                            "infinite": true,
-                            "dots": true
-                        }
-                    },
-                    {
-                    "breakpoint": 425,
-                        "settings": {
-                            "arrows": false,
-                            "slidesToShow": 1,
-                            "slidesToScroll": 1,
-                            "infinite": true,
-                            "dots": true
-                        }
-                    },
-                    {
-                    "breakpoint": 720,
-                        "settings": {
-                            "slidesToShow": 1,
-                            "slidesToScroll": 1,
-                            "infinite": true,
-                            "dots": false
-                        }
+            "dots": true,
+            "autoplay": true,
+            "infinite": true,
+            "arrow":true,
+            "autoplaySpeed": 4000,
+            "slidesToShow": 3,
+            "slidesToScroll": 1,
+            "responsive": [
+                {
+                "breakpoint": 1024,
+                    "settings": {
+                        "slidesToShow": 3,
+                        "slidesToScroll": 1,
+                        "infinite": true,
+                        "dots": true
                     }
-                ]
-            },  
+                },
+                {
+                "breakpoint": 414,
+                    "settings": {
+                        "arrows": false,
+                        "slidesToShow": 1,
+                        "slidesToScroll": 1,
+                        "infinite": true,
+                        "dots": true
+                    }
+                },
+                {
+                "breakpoint": 425,
+                    "settings": {
+                        "arrows": false,
+                        "slidesToShow": 1,
+                        "slidesToScroll": 1,
+                        "infinite": true,
+                        "dots": true
+                    }
+                },
+                {
+                "breakpoint": 720,
+                    "settings": {
+                        "slidesToShow": 1,
+                        "slidesToScroll": 1,
+                        "infinite": true,
+                        "dots": false
+                    }
+                }
+            ]
+        },  
     }),
   }
 </script>

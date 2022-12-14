@@ -9,88 +9,82 @@
         <v-row justify="center" align="center" class="mt-8 ma-2">
             <v-col justify="center" align="center" cols="12" md="11" lg="9" sm="12" >
                 <v-row justify="center" align="center">
-                    <v-col cols="12" md="3" lg="3" xl="3" >
+                    <v-col cols="12" md="3" lg="3" xl="3" class="contenedorhover">
                         <v-card
                             class="mx-auto hover"
                             max-width="280"
-                            height="360"
-                            elevation="2"
+                            height="300"
+                            elevation="7"
+                            style="border-radius: 0"
                         >
                             <v-img 
-                            class="overlay"
                                 height="200"
                                 src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
                             ></v-img>
+                            <div class="overlay"></div>
                             <br>
                             <div class="mr-5 ml-5">
                                 <v-row justify="center" align="start">
-                                    <p class="Text-Paso">1. Preinscríbete aquí.</p>
-                                    <div class="textDescripPaso">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                    </div>
+                                    <p class="Text-Paso">1. Preinscríbete <br> <a href="" target="_blanck">Aquí.</a> </p>
                                 </v-row>
                             </div>
                         </v-card>
                     </v-col>
-                    <v-col cols="12" md="3" lg="3" xl="3" >
+                    <v-col cols="12" md="3" lg="3" xl="3" class="contenedorhover" >
                         <v-card
                             class="mx-auto hover"
                             max-width="280"
-                            height="360"
-                            elevation="2"
+                            height="300"
+                            elevation="7"
+                            style="border-radius: 0"
                         >
                             <v-img
                                 height="200"
                                 src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-                            ></v-img><br>
+                            ></v-img>
+                            <div class="overlay"></div>
+                            <br>
                             <div class="mr-5 ml-5">
                                 <v-row justify="center" align="start">
                                     <p class="Text-Paso">2. Realiza el pago</p>
-                                    <div class="textDescripPaso">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                    </div>
                                 </v-row>
                             </div >
                         </v-card>
                     </v-col>
-                    <v-col cols="12" md="3" lg="3" xl="3" >
+                    <v-col cols="12" md="3" lg="3" xl="3" class="contenedorhover">
                         <v-card
                             class="mx-auto hover"
                             max-width="280"
-                            height="360"
-                            elevation="2"
+                            height="300"
+                            elevation="7"
+                            style="border-radius: 0"
                         >
                             <v-img
                                 height="200"
                                 src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-                            ></v-img><br>
+                            ></v-img><div class="overlay"></div><br>
                             <div class="mr-5 ml-5">
                                 <v-row justify="center" align="start">
                                     <p class="Text-Paso">3. Finaliza tu inscripción</p>
-                                    <div class="textDescripPaso">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                    </div>
                                 </v-row>
                             </div>
                         </v-card>
                     </v-col>
-                    <v-col cols="12" md="3" lg="3" xl="3" >
+                    <v-col cols="12" md="3" lg="3" xl="3" class="contenedorhover">
                         <v-card
                             class="mx-auto hover"
                             max-width="280"
-                            height="360"
-                            elevation="2"
+                            height="300"
+                            elevation="7"
+                            style="border-radius: 0"
                         >
                             <v-img
                                 height="200"
                                 src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-                            ></v-img><br>
+                            ></v-img><div class="overlay"></div><br>
                             <div class="mr-5 ml-5">
                                 <v-row justify="center" align="start">
                                     <p class="Text-Paso">4. Paga tus derechos  de matricula</p>
-                                    <div class="textDescripPaso">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                    </div>
                                 </v-row>
                             </div>
                         </v-card>
@@ -101,27 +95,31 @@
   </v-container>
 </template>
 <style lang="scss">
-/* .hover{
+.contenedorhover:hover{
     position: relative;
-} */
+    transform: translate(0px, -15px)
+} 
+.contenedorhover{
+    transition: transform 220ms ease-out;
+}
 .overlay {
-    position: relative;
-    &::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-        display: none;
-        background: linear-gradient(to right,  rgba(44, 105, 228, 0.7) 0%,rgba(3,15,39,0) 100%); 
-    } 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    width: 100%;
+    opacity: 0;
+    
+    background-color: rgba($color: #fbb03b, $alpha: .3);
 }
 .hover:hover .overlay{
-    position: relative;
-    bottom: 2px;
-    display: block   ;
+    opacity: 1;
+    // transform: translate(0px, -20px)
+    // transition:all .2 ease-in-out;
+    // -webkit-transition:all .2 ease-in-out;
+    // display: block;
 
 }
 </style>

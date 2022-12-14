@@ -15,16 +15,16 @@
                         class="text-blue-f-1em">
                         <v-expansion-panel-header style="color:#003B4C;" >1. ¿Qué requisitos debo cumplir para ingresar?</v-expansion-panel-header>
                         <v-expansion-panel-content>
-                            En cada uno de nuestros posgrados puedes encontrar el perfil de ingreso y criterios para admisión.
+                            Esto depende de cada programa, debes acceder para consultar el perfil de ingreso y criterios de admisión estipulados por cada posgrado ofertado.
                         </v-expansion-panel-content>
                     </v-expansion-panel>
                     <v-expansion-panel 
                         accordion 
                         height="200"
                         class="text-blue-f-1em">
-                        <v-expansion-panel-header style="color:#003B4C;" >2. ¿Cuánto duran los posgrados</v-expansion-panel-header>
+                        <v-expansion-panel-header style="color:#003B4C;" >2. ¿Cuánto duran los posgrados?</v-expansion-panel-header>
                         <v-expansion-panel-content>
-                            Las especializaciones tienen una durabilidad de 2 semestres y maestrías de 4 semestres.
+                            Como es común las especializaciones tienen una durabilidad de 2 semestres y maestrías de 4 semestres, el doctorado está sujeto a la duración de la investigación realizada. 
                         </v-expansion-panel-content>
                     </v-expansion-panel>
                     <v-expansion-panel 
@@ -33,7 +33,7 @@
                         class="text-blue-f-1em">
                         <v-expansion-panel-header style="color:#003B4C;" >3. ¿En qué modalidad están los posgrados?</v-expansion-panel-header>
                         <v-expansion-panel-content>
-                            Modalidad diurna presencial.
+                            Modalidad presencial concentrada los viernes y sábados. ¡Ven por tu posgrado!
                         </v-expansion-panel-content>
                     </v-expansion-panel>
                     <v-expansion-panel 
@@ -49,55 +49,54 @@
                         accordion 
                         height="200"
                         class="text-blue-f-1em">
-                        <v-expansion-panel-header style="color:#003B4C;" >5. ¿Puedo acceder a descuentos para mi posgrado?</v-expansion-panel-header>
+                        <v-expansion-panel-header style="color:#003B4C;" >5. ¿Dónde puedo realizar el pago de inscripción y matricula?</v-expansion-panel-header>
                         <v-expansion-panel-content>
-                            plica desde el segundo semestre por:
-                            <ul>
-                                <li>
-                                    Descuento Electoral 10%
-                                </li>
-                                <li>
-                                    Egresados (A.S 013/2018)
-                                </li>
-                                <li>
-                                    Especialización 10%
-                                </li>
-                                <li>
-                                    Doctorado 20%
-                                </li>
-                            </ul>
+                            Sencillo, si pagas en efectivo puedes acudir al Banco Bogotá, Banco caja social, Bancolombia, Congente, BBVA. En pagos virtuales solo realizar la transacción con tu tarjeta crédito o realizar el pago por PSE
                         </v-expansion-panel-content>
                     </v-expansion-panel>
                     <v-expansion-panel 
                         accordion 
                         height="200"
                         class="text-blue-f-1em">
-                        <v-expansion-panel-header style="color:#003B4C;" >6. ¿Cómo puedo financiar mi posgrado? </v-expansion-panel-header>
+                        <v-expansion-panel-header style="color:#003B4C;" >6. ¿Puedo acceder a descuentos para mi posgrado? </v-expansion-panel-header>
                         <v-expansion-panel-content>
-                            <ul>
-                                <li>
-                                    La universidad tiene convenio con el Banco Pichincha
-                                </li>
-                                <li>
-                                    El ICETEX. Ingrese al sitio web www.Icetex.gov.co - crédito tú eliges  - Posgrados
-                                </li>
-                            </ul>
+                            ¡Claro que sí! Puedes tener desde el segundo semestre descuento electoral del 10% 
                         </v-expansion-panel-content>
                     </v-expansion-panel>
                     <v-expansion-panel 
                         accordion 
                         height="200"
                         class="text-blue-f-1em">
-                        <v-expansion-panel-header style="color:#003B4C;" >7. ¿Cuáles son las fechas de inscripción? </v-expansion-panel-header>
+                        <v-expansion-panel-header style="color:#003B4C;" >7. Soy egresado ¿A cuáles descuentos puedo acceder?</v-expansion-panel-header>
                         <v-expansion-panel-content>
-                            <ul>
-                                <li>
-                                    Inscripciones hasta el 27 de enero de 2023
-                                </li>
-                                <li>
-                                    Cierre del formulario de inscripción en plataforma 31 de enero 2023
-                                </li>
-                            </ul>
+                            Gracias al A.S 013/2018 puedes acceder a descuentos en especialización del 10%, maestría el 15% y doctorado 20%.  ¡Sigue creciendo en Unillanos!
+                        </v-expansion-panel-content>
+                    </v-expansion-panel>
+                    <v-expansion-panel 
+                        accordion 
+                        height="200"
+                        class="text-blue-f-1em">
+                        <v-expansion-panel-header style="color:#003B4C;" >8. ¿Cómo puedo financiar mi posgrado?</v-expansion-panel-header>
+                        <v-expansion-panel-content>
+                            La universidad de los Llanos tiene convenio con el Banco Pichincha y con el ICETEX en la página Web www.Icetex.gov.co – crédito tú eliges – Posgrados. ¡Finánciate tu posgrado!
+                        </v-expansion-panel-content>
+                    </v-expansion-panel>
+                    <v-expansion-panel 
+                        accordion 
+                        height="200"
+                        class="text-blue-f-1em">
+                        <v-expansion-panel-header style="color:#003B4C;" >9. ¿Cuáles son las fechas de inscripción?</v-expansion-panel-header>
+                        <v-expansion-panel-content>
+                            <a href="https://siau.unillanos.edu.co:8443/ORION/Preregistro " target="_blank" rel="noopener noreferrer">¡Inscríbete ahora!</a>  Tienes hasta el 27 de enero de 2023 el cierre del formulario de inscripción en plataforma es el 31 de enero 2023
+                        </v-expansion-panel-content>
+                    </v-expansion-panel>
+                    <v-expansion-panel 
+                        accordion 
+                        height="200"
+                        class="text-blue-f-1em">
+                        <v-expansion-panel-header style="color:#003B4C;" >10. Soy estudiante de pregrado y quiero realizar un posgrado como opción de grado, ¿Qué debo hacer? </v-expansion-panel-header>
+                        <v-expansion-panel-content>
+                            Realiza el proceso con tu director de programa correspondiente para acceder a la opción de grado y la universidad te otorga un descuento del 20% sobre el valor de inscripción por educación continuada con la Unillanos.
                         </v-expansion-panel-content>
                     </v-expansion-panel>
                 </v-expansion-panels>

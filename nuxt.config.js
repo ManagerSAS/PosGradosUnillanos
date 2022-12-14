@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - Unillanos-PosGrados',
+    titleTemplate: '%s - Posgrados Unillanos',
     title: 'Unillanos-PosGrados',
     htmlAttrs: {
       lang: 'en'
@@ -9,7 +9,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Encuentra tu posgrado aquí' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -19,9 +19,9 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/assets/style.scss',
     '~/assets/TheHeader.scss',
     '~/assets/Intro.scss',
-    '~/assets/style.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

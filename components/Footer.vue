@@ -11,13 +11,13 @@
                                 <img src="/logo.png" width="200px" alt="Logo"/>
                             </n-link>
                         </div>
-                        <div style="font-family: 'Quicksand', sans-serif;" class="footer-widget-content">
+                        <div class="footer-widget-content">
                             <div class="content" style="line-height: normal;">
-                                <p style="font-family: 'Quicksand', sans-serif;">Nit: 892.000.757-3</p>
-                                <p style="font-family: 'Quicksand', sans-serif;">Linea Gratuita PQRs: 018000918641</p><br>
-                                <p style="font-family: 'Quicksand', sans-serif;">Contacto@unillanos.edu.co</p>
-                                <p style="font-family: 'Quicksand', sans-serif;">notificacionesjudiciales@unillanos.edu.co</p> <br>
-                                <p style="font-family: 'Quicksand', sans-serif; ">Políticas de Privacidad y Términos de Uso Estatuto sobre Propiedad Intelectual de la </p>
+                                <p>Nit: 892.000.757-3</p>
+                                <p>Linea Gratuita PQRs: 018000918641</p><br>
+                                <p>Contacto@unillanos.edu.co</p>
+                                <p>notificacionesjudiciales@unillanos.edu.co</p> <br>
+                                <p>Políticas de Privacidad y Términos de Uso Estatuto sobre Propiedad Intelectual de la </p>
                             </div>
                         </div>
                     </div>
@@ -27,13 +27,13 @@
                 <!-- Footer Widget Start -->
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 mt-30">
                     <div class="footer-widget">
-                        <h4 style="font-family: 'Quicksand', sans-serif;" class="footer-widget-title">Ubícanos</h4>
+                        <h4 class="footer-widget-title">Ubícanos</h4>
                         <div class="footer-widget-content">
                             <div class="content" style="line-height: normal;">
-                                <p style="font-family: 'Quicksand', sans-serif;">Barcelona: Km. 12 Vía Puerto López - PBX. 60 (8)6616800</p>
-                                <p style="font-family: 'Quicksand', sans-serif;">San Antonio: Calle 37 No. 41-02 Barzal - PBX. 60(8) 6616900</p><br>
-                                <p style="font-family: 'Quicksand', sans-serif;">Emporio: Calle 40 A No. 28-32 Emporio - 60 (8)6734700</p>    
-                                <p style="font-family: 'Quicksand', sans-serif;">Horario de atención: Lunes a Viernes 7:30am a 11:30m y 2:00pm a 5:30pm</p> <br>
+                                <p>Barcelona: Km. 12 Vía Puerto López - PBX. 60 (8)6616800</p>
+                                <p>San Antonio: Calle 37 No. 41-02 Barzal - PBX. 60(8) 6616900</p><br>
+                                <p>Emporio: Calle 40 A No. 28-32 Emporio - 60 (8)6734700</p>    
+                                <p>Horario de atención: Lunes a Viernes 7:30am a 11:30m y 2:00pm a 5:30pm</p> <br>
                             </div>
                         </div>
                     </div>
@@ -44,19 +44,19 @@
                 <!-- Footer Widget Start -->
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mt-30">
                     <div class="footer-widget" justify="center" align="center">
-                        <h4 style="font-family: 'Quicksand', sans-serif;" class="footer-widget-title ">Síguenos</h4>
+                        <h4 class="footer-widget-title ">Síguenos</h4>
                         <v-row justify="center" align="center">
-                            <v-col cols="2" >
-                                <v-icon color="white">mdi-whatsapp mdi-48px</v-icon>
+                            <v-col cols="1" >
+                               <a href="https://api.whatsapp.com/send?phone=573023179118" target="_blank" style="text-decoration: none" rel="noopener noreferrer"><v-icon color="white" href="">mdi-whatsapp mdi-36px</v-icon></a>
                             </v-col>
-                            <v-col cols="2">
-                                <v-icon color="white">mdi-facebook mdi-48px</v-icon>
+                            <v-col cols="1">
+                                <a href="https://www.facebook.com/UnillanosOficial" target="_blanck" style="text-decoration: none"><v-icon color="white" >mdi-facebook mdi-36px</v-icon></a>
                             </v-col>
-                            <v-col cols="2">
-                                <v-icon color="white">mdi-instagram mdi-48px</v-icon>
+                            <v-col cols="1">
+                                <a href="https://www.instagram.com/unillanos_/" target="_blank " style="text-decoration: none" rel="noopener noreferrer"><v-icon color="white">mdi-instagram mdi-36px</v-icon></a>
                             </v-col>
-                            <v-col cols="2">
-                                <v-icon color="white">mdi-web mdi-48px</v-icon>
+                            <v-col cols="1">
+                               <a href="https://www.unillanos.edu.co/?fbclid=IwAR3Pn1S0Jo8vT_pCHY5lJndTrGWBAKMHXLM20TfRkPmRwuMlM22KdfHHGA4" style="text-decoration: none" target="_blank" rel="noopener noreferrer"> <v-icon color="white">mdi-web mdi-36px</v-icon></a>
                             </v-col>
                         </v-row>
                     </div>

@@ -4,13 +4,13 @@
             <div class="container position-relative">
                 <div class="row justify-content-between align-items-center" >
                     <!-- Header Logo Start -->
-                    <!-- <div class="col-auto d-flex">
+                    <div class="col-auto d-flex d-sm-block d-xl-none d-lg-none d-md-none">
                         <div class="header-logo ml-lg-10 ml-md-0 mt-md-5">
                             <n-link to="/">
                                 <img class="dark-logo" src="../static/logo.png" alt="Agency Logo"/>
                             </n-link>
                         </div>
-                    </div> -->
+                    </div>
                     <!-- Header Logo End -->
                     <v-spacer ></v-spacer>
                     <!-- Header Main Menu Start -->
