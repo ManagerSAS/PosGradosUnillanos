@@ -29,7 +29,7 @@
                         class="text-capitalize font-weight-thin"
                         style="border-radius:0; background-color: #1a212f; color: white;"
                         @click="filter('Es')"
-                      >Especializacion</v-btn>
+                      >Especialización</v-btn>
                     </v-col>
                     <v-col cols="12" md="3" sm="3" justify="center" align="center">
                         <v-btn
