@@ -51,7 +51,7 @@
                         class="text-blue-f-1em">
                         <v-expansion-panel-header style="color:#003B4C;" >5. ¿Dónde puedo realizar el pago de inscripción y matrícula?</v-expansion-panel-header>
                         <v-expansion-panel-content>
-                            Sencillo, Si realizas el pago en efectivo puedes acudir al Banco Bogotá, Banco caja social, Bancolombia, Congente, BBVA. En pagos virtuales solo realizar la transacción con tu tarjeta crédito o realizar el pago por PSE
+                            Si realizas el pago en efectivo puedes acudir al Banco Bogotá, Banco caja social, Bancolombia, Congente, BBVA. En pagos virtuales solo realizar la transacción con tu tarjeta crédito o realizar el pago por PSE
                         </v-expansion-panel-content>
                     </v-expansion-panel>
                     <v-expansion-panel 
