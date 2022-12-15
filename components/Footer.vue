@@ -17,7 +17,6 @@
                                 <p>Linea Gratuita PQRs: 018000918641</p><br>
                                 <p>Contacto@unillanos.edu.co</p>
                                 <p>notificacionesjudiciales@unillanos.edu.co</p> <br>
-                                <p>Políticas de Privacidad y Términos de Uso Estatuto sobre Propiedad Intelectual de la </p>
                             </div>
                         </div>
                     </div>
@@ -82,28 +81,28 @@
             return {
                 LogosRegulador:[
                     {
-                        src: "/log_gobiern.png",
+                        src: "/iconos/log_gobiern.png",
                     },
                     {
-                        src: "/logo_suit.png",
+                        src: "/iconos/logo_suit.png",
                     },
                     {
-                        src: "snies.png",
+                        src: "/iconos/snies.png",
                     },
                     {
-                        src: "secop.jpg",
+                        src: "/iconos/secop.jpg",
                     },
                     {
-                        src: "compra-eficientew.png",
+                        src: "/iconos/compra-eficientew.png",
                     },
                     {
-                        src: "sigepw.png",
+                        src: "/iconos/sigepw.png",
                     },
                     {
-                        src: "minTic_2.png",
+                        src: "/iconos/minTic_2.png",
                     },
                     {
-                        src: "govco.png",
+                        src: "/iconos/govco.png",
                     }
                 ]
             }

@@ -7,7 +7,7 @@
             </v-col>
         </v-row>
         <v-row justify="center" align="center" class="mt-8 ma-2">
-            <v-col justify="center" align="center" cols="12" md="11" lg="9" sm="12" >
+            <v-col justify="center" align="center" cols="12" md="11" lg="10" xl="9" sm="12" >
                 <v-row justify="center" align="center">
                     <v-col cols="12" md="3" lg="3" xl="3" class="contenedorhover">
                         <v-card
@@ -20,8 +20,21 @@
                             <v-img 
                                 height="200"
                                 src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-                            ></v-img>
+                            >
+                        </v-img>
+                            <v-btn
+                                align="end"
+                                class="btn-sgt"
+                                color="#fbb03b"
+                                elevation="2"
+                                fab
+                                dark
+                                small
+                            ><v-icon dark>
+                                mdi-chevron-double-right
+                            </v-icon></v-btn>
                             <div class="overlay"></div>
+                            
                             <br>
                             <div class="mr-5 ml-5">
                                 <v-row justify="center" align="start">
@@ -42,6 +55,17 @@
                                 height="200"
                                 src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
                             ></v-img>
+                            <v-btn
+                                align="end"
+                                class="btn-sgt"
+                                color="#00273d"
+                                elevation="2"
+                                fab
+                                dark
+                                small
+                            ><v-icon dark>
+                                mdi-chevron-double-right
+                            </v-icon></v-btn>
                             <div class="overlay"></div>
                             <br>
                             <div class="mr-5 ml-5">
@@ -62,7 +86,19 @@
                             <v-img
                                 height="200"
                                 src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-                            ></v-img><div class="overlay"></div><br>
+                            ></v-img><div class="overlay"></div>
+                            <v-btn
+                                align="end"
+                                color="#fbb03b"
+                                class="btn-sgt"
+                                elevation="2"
+                                fab
+                                dark
+                                small
+                            ><v-icon dark>
+                                mdi-chevron-double-right
+                            </v-icon></v-btn>
+                            <br>
                             <div class="mr-5 ml-5">
                                 <v-row justify="center" align="start">
                                     <p class="Text-Paso">3. Finaliza tu inscripción</p>
@@ -81,10 +117,11 @@
                             <v-img
                                 height="200"
                                 src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-                            ></v-img><div class="overlay"></div><br>
+                            ></v-img><div class="overlay"></div>
+                            <br>
                             <div class="mr-5 ml-5">
                                 <v-row justify="center" align="start">
-                                    <p class="Text-Paso">4. Paga tus derechos  de matricula</p>
+                                    <p class="Text-Paso">4. Paga tus derechos  de matrícula</p>
                                 </v-row>
                             </div>
                         </v-card>
@@ -95,6 +132,17 @@
   </v-container>
 </template>
 <style lang="scss">
+.btn-sgt{
+    left: 11.5em;
+    z-index: 1; 
+    bottom: 1.5em;
+    @media #{$Cel-Small,$Cel-Large,$tablet-device}{
+        left: 0;
+        z-index: 1; 
+        top: 6.5em;
+        transform: rotate(90deg);
+    }
+}
 .contenedorhover:hover{
     position: relative;
     transform: translate(0px, -15px)
@@ -116,10 +164,5 @@
 }
 .hover:hover .overlay{
     opacity: 1;
-    // transform: translate(0px, -20px)
-    // transition:all .2 ease-in-out;
-    // -webkit-transition:all .2 ease-in-out;
-    // display: block;
-
 }
 </style>

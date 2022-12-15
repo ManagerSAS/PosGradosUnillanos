@@ -1,11 +1,11 @@
 <template>
-    <div class="popup-mobile-menu popup-mobile-visiable order-2" id="offcanvas-menu">
-        <div @click="mobiletoggleClass('removeClass', 'show-mobile-menu')"></div>
+   <div class="popup-mobile-menu popup-mobile-visiable" id="offcanvas-menu">
+        <div class="mobile-menu-overlay" @click="mobiletoggleClass('removeClass', 'show-mobile-menu')"></div>
         <div class="inner custom-scrollbar">
             <div class="mobile-header">
-                <div class="header-logo">
-                    <n-link class="logo" to="/">
-                        <v-img  width="150px" src="/logo.png" alt="Agency Logo"></v-img>
+                <div class="logo">
+                    <n-link to="/">
+                        <img src="/logo.png" width="150" alt="site logo">
                     </n-link>
                 </div>
                 <button class="mobile-close-btn" @click="mobiletoggleClass('removeClass', 'show-mobile-menu')"></button>
@@ -18,7 +18,7 @@
                                 <n-link style="text-decoration: none" to="#Programas">Programas </n-link>
                             </li>
                             <li>
-                                <n-link style="text-decoration: none" to="#featured">¿Porqué nosotros?</n-link>
+                                <n-link style="text-decoration: none" to="#featured">¿Por qué nosotros?</n-link>
                             </li>
                             <li>
                                 <n-link style="text-decoration: none" to="#faq">Preguntas Frecuentes</n-link>
@@ -35,6 +35,7 @@
             </div>
         </div>
     </div>
+
 </template>
 
 <script>

@@ -1,7 +1,14 @@
 <template>
         <div id="contact" >
-            <div class="intro-section bg-cover bg">
-                <v-container fluid class="intro-content ">
+            <div loading="lazy" class="intro-section bg-cover bg" aspect-ratio="1">
+                <div align="center">
+                    <v-progress-circular
+                        v-show="preloader"
+                        indeterminate
+                        color="#fbb03b"
+                    ></v-progress-circular>
+                </div>
+                <v-container fluid >
                     <v-form ref="formulario" autocomplete="off">
                         <v-row align="center" justify="center" >
                              <v-col  align="center" justify="center" cols="12" offset-xl="6"  offset-lg="5" class="mr-lg-1 mr-md-1 pa-5 " offset-md="5" md="6" lg="4" sm="8"> 
@@ -156,6 +163,15 @@
             </div>
         </div>
 </template>
+<style lang="scss">
+.bg{
+    background-image: url('/banners/bannerescritorio.jpg');
+    @media #{$tablet-device,$small-mobile}{
+        background-image: url('/banners/Bannercel.jpg');
+        background-size: 100% 100%;
+    }
+}
+</style>
 <script>
 import Post from './Post/Post'
   export default {
@@ -164,6 +180,7 @@ import Post from './Post/Post'
         dialogPoliticas: false,
         snackbar: false,
         message: '',
+        preloader: false,
         colorSnack: '',
         loading: false,
         items: ["Especialización en Gestión Ambiental Sostenible",
@@ -241,6 +258,10 @@ import Post from './Post/Post'
             v => /.+@.+\..+/.test(v) || '',
         ],
     }),
+    created(){
+        this.preloader=true
+        setTimeout(()=>{ this.preloader = false },2000)
+    },
     methods:{
         async Enviar(){
             this.btn= false

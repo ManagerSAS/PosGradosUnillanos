@@ -2,14 +2,14 @@
   <v-container fluid id="featured" class="pt-15 pb-15 font-gotham">
         <v-row justify="center" align="center">
             <v-col cols="12" sm="12" md="8" lg="8" xl="8" justify="center" align="center">
-                <h3 class="titles ">¿POR QUÉ HACER MIS POSGRADO <br> <span class="font-weight-light" >EN UNILLANOS?</span> </h3>
+                <h3 class="titles ">¿POR QUÉ HACER MI POSGRADO <br> <span class="font-weight-light" >EN UNILLANOS?</span> </h3>
                 <div class="linea"></div>
             </v-col>
         </v-row>
         <v-row justify="center" align="center">
             <v-col justify="center" align="center"  cols="12" md="11" lg="9" sm="11">
                 <v-row  justify="center" align="center">
-                    <v-col justify="center" align="center" cols="12" lg="11" md="11" sm="12" >
+                    <v-col justify="center" align="center" cols="12" lg="12" xl="11" md="11" sm="12" >
                         <VueSlickCarousel v-bind="settings" :arrow="true" justify="center" align="center">
                             <div justify="center" align="center" v-for="({icon,title ,desc,py1,mx}, index) in information" :key="index" class="contenCard pr-5 pl-5">
                                 <div class="pt-10 pb-5">
@@ -31,12 +31,12 @@
 </template>
 <style >
 .slick-prev:before {
-    content: url('../static/right.png');
+    content: url('../static/iconos/right.png');
     /* //  color: #395730 !important;  */
      width: 15px;
   }
 .slick-next:before {
-    content: url('../static/left.png');
+    content: url('../static/iconos/left.png');
     /* // color: #395730 !important;  */
     /* font-size: 30px; */
 }
@@ -53,14 +53,55 @@ import VueSlickCarousel from 'vue-slick-carousel'
     components: { VueSlickCarousel },
     data: () => ({
         information: [
-            {mx:'mx-15 px-15', py1:'px-6 py-7',icon:'/certified1.png', title:'Somos calidad', desc:'El Ministerio de Educación Nacional, mediante Resolución número 5310 del 8 de abril de 2022, otorgó la Acreditación Institucional en Alta Calidad a la Universidad de los Llanos, un logro que se alcanza después de varios años de trabajo, esfuerzo y compromiso.'},
-            {mx:'mx-15 px-15',py1:'px-6 py-2',icon:'/user.png', title:'¡Te enseñan doctores!', desc:'Contamos con más de 100 doctores de orden local, regional, nacional e internacional para alcanzar una oferta académica de calidad para la Orinoquia'},
-            {mx:'mx-15',py1:'px-6 py-2',icon:'/certified2.png',title:'Estamos categorizados por Colciencias',  desc:'Más del 80% de nuestros Doctores son categorizados por Colciencias.'},
-            {mx:'mx-15',py1:'px-6 py-2',icon:'/certified2.png',title:'Promovemos la investigación',  desc:'Tenemos más de 10 investigadores senior con proyectos de alto impacto social y excelencia académica en procesos de cualificación.'},
-            {mx:'mx-15',py1:'px-6 py-2',icon:'/certified1.png', title:'¡Somos la Universidad más grande de la región!', desc:'El campus Barcelona, ubicado a 12 km del centro de la ciudad, abarca una extensión de 43.2 Has, y la Sede San Antonio, de 2.67 Has, situada en sector céntrico de la capital.'},
-            {mx:'mx-15 px-15',py1:'px-6 py-2',icon:'/certified1.png', title:'Tenemos sede en Granada', desc:'En nuestra sede Boquemonte ya se encuentra disponible la especialización en Gestión de Proyectos para el municipio de Granada.'},
-            {mx:'mx-15',py1:'px-6 py-2',icon:'/certified2.png',title:'Somos la única universidad con doctorado',  desc:'Reconocido por el ministerio con registro calificado. SNIES 102256'},
-            {mx:'mx-15',py1:'px-6 py-2',icon:'/certified2.png',title:'Somos la universidad de media Colombia',  desc:'Con más de 600 profesionales en la modalidad de formación de posgrados'},
+            {
+                mx:'mx-sm-15 mx-lg-0 mx-xl-15 mx-md-0', 
+                py1:'px-6 py-7',
+                icon:'/iconos/Calidad.png', 
+                title:'Somos calidad', 
+                desc:'El Ministerio de Educación Nacional, mediante Resolución número 5310 del 8 de abril de 2022, otorgó la Acreditación Institucional en Alta Calidad a la Universidad de los Llanos'
+            },
+            {
+                mx:'mx-sm-15 mx-lg-15 mx-xl-15 px-xl-15 mx-md-0',
+                py1:'px-6 py-2',
+                icon:'/iconos/Maestros.png', 
+                title:'¡Te enseñan Doctores!', 
+                desc:'Contamos con más de 100 doctores de orden local, regional, nacional e internacional para alcanzar una oferta académica de calidad para la Orinoquia'},
+            {
+                mx:'mx-sm-15 mx-lg-5 mx-xl-15 mx-md-0',
+                py1:'px-6 py-2',
+                icon:'/iconos/Colciencias.png',
+                title:'Estamos categorizados por Colciencias',  
+                desc:'Más del 80% de nuestros Doctores son categorizados por Colciencias.'},
+            {
+                mx:'mx-sm-15 mx-lg-10 mx-xl-15 mx-md-0',
+                py1:'px-6 py-2',
+                icon:'/iconos/Investigacion.png',
+                title:'Promovemos la investigación',  
+                desc:'Tenemos más de 10 investigadores senior con proyectos de alto impacto social y excelencia académica en procesos de cualificación.'},
+            {
+                mx:'mx-sm-15 mx-lg-0 mx-xl-15 mx-md-0',
+                py1:'px-6 py-2',
+                icon:'/iconos/Masgrandedelaregion.png', 
+                title:'¡Somos la Universidad más grande de la región!', 
+                desc:'El campus Barcelona, ubicado a 12 km del centro de la ciudad, abarca una extensión de 43.2 ha, y la sede San Antonio, de 2.67 ha, situada en sector céntrico de la capital.'},
+            {
+                mx:'mx-sm-15 mx-lg-15 mx-xl-15 px-xl-15 mx-md-0',
+                py1:'px-6 py-2',
+                icon:'/iconos/SedeGranada.png', 
+                title:'Tenemos sede en Granada', 
+                desc:'En nuestra sede Boquemonte ya se encuentra disponible la especialización en Gestión de Proyectos para el municipio de Granada.'},
+            {
+                mx:'mx-sm-15 mx-lg-0 mx-xl-15 mx-md-0',
+                py1:'px-6 py-2',
+                icon:'/iconos/Dostorado.png',
+                title:'Somos la única universidad con Doctorado',  
+                desc:'Reconocido por el Ministerio de Educación con registro calificado. SNIES 102256'},
+            {
+                mx:'mx-sm-15 mx-lg-0 mx-xl-15 mx-md-0',
+                py1:'px-6 py-2',
+                icon:'/iconos/MediaColombia.png',
+                title:'Somos la universidad de media Colombia',  
+                desc:'Con más de 600 profesionales en la modalidad de formación de posgrados'},
         ],
         settings: {
             "dots": false,
@@ -71,6 +112,15 @@ import VueSlickCarousel from 'vue-slick-carousel'
             "slidesToShow": 3,
             "slidesToScroll": 1,
             "responsive": [
+                {
+                "breakpoint": 1396,
+                    "settings": {
+                        "slidesToShow": 2.5,
+                        "slidesToScroll": 1,
+                        "infinite": true,
+                        "dots": false
+                    }
+                },
                 {
                 "breakpoint": 1024,
                     "settings": {

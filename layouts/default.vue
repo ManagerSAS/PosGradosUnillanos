@@ -1,9 +1,9 @@
 <template>
   <v-app>
-    <v-main>
-      <client-only placeholder="Loading...">
+    <client-only >
+      <v-main>
         <Nuxt />
-      </client-only>
-    </v-main>
+      </v-main>
+    </client-only>
   </v-app>
 </template>
