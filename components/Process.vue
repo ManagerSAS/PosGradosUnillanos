@@ -13,7 +13,7 @@
                         <v-card
                             class="mx-auto hover"
                             max-width="280"
-                            height="300"
+                            height="320"
                             elevation="7"
                             style="border-radius: 0"
                         >
@@ -37,8 +37,9 @@
                             
                             <br>
                             <div class="mr-5 ml-5">
-                                <v-row justify="center" align="start">
-                                    <p class="Text-Paso">1. Preinscríbete  <a href="" target="_blanck">Aquí.</a> </p>
+                                <v-row justify="center" align="start" class="line-height">
+                                    <p class="Text-Paso">1. Preinscríbete  <a href="https://siau.unillanos.edu.co:8443/ORION/Preregistro" target="_blanck">Aquí.</a> </p>
+                                    <p class="Text-Description1 mx-2">Diligencia el formulario de preinscripción.</p>
                                 </v-row>
                             </div>
                         </v-card>
@@ -47,7 +48,7 @@
                         <v-card
                             class="mx-auto hover"
                             max-width="280"
-                            height="300"
+                            height="320"
                             elevation="7"
                             style="border-radius: 0"
                         >
@@ -69,8 +70,9 @@
                             <div class="overlay"></div>
                             <br>
                             <div class="mr-5 ml-5">
-                                <v-row justify="center" align="start">
+                                <v-row justify="center" align="start" class="line-height">
                                     <p class="Text-Paso">2. Realiza el pago</p>
+                                    <p class="Text-Description1 mx-2">Puedes realizar el pago en efectivo, PSE o tarjeta de crédito.</p>
                                 </v-row>
                             </div >
                         </v-card>
@@ -79,7 +81,7 @@
                         <v-card
                             class="mx-auto hover"
                             max-width="280"
-                            height="300"
+                            height="320"
                             elevation="7"
                             style="border-radius: 0"
                         >
@@ -100,8 +102,9 @@
                             </v-icon></v-btn>
                             <br>
                             <div class="mr-5 ml-5">
-                                <v-row justify="center" align="start">
+                                <v-row justify="center" align="start" class="line-height">
                                     <p class="Text-Paso">3. Finaliza tu inscripción</p>
+                                    <p class="Text-Description1 mx-2">Recibirás correo de confirmación y se habilita el formulario de inscripción.</p>
                                 </v-row>
                             </div>
                         </v-card>
@@ -110,7 +113,7 @@
                         <v-card
                             class="mx-auto hover"
                             max-width="280"
-                            height="300"
+                            height="320"
                             elevation="7"
                             style="border-radius: 0"
                         >
@@ -120,8 +123,9 @@
                             ></v-img><div class="overlay"></div>
                             <br>
                             <div class="mr-5 ml-5">
-                                <v-row justify="center" align="start">
+                                <v-row justify="center" align="start" class="line-height">
                                     <p class="Text-Paso">4. Paga tus derechos  de matrícula</p>
+                                    <p class="Text-Description1 mx-2 mb-2">Para finalizar el proceso solo debes realiza el pago de los derechos de matrícula.</p>
                                 </v-row>
                             </div>
                         </v-card>

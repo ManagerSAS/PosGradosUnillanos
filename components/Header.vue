@@ -22,7 +22,7 @@
                                         <n-link style="text-decoration: none" to="#Programas">Programas </n-link>
                                     </li>
                                     <li>
-                                        <n-link style="text-decoration: none" to="#featured">¿Porqué nosotros?</n-link>
+                                        <n-link style="text-decoration: none" to="#featured">¿Por qué nosotros?</n-link>
                                     </li>
                                     <li>
                                         <n-link style="text-decoration: none" to="#faq">Preguntas Frecuentes</n-link>
