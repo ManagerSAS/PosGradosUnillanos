@@ -142,12 +142,17 @@
         top: 6.5em;
         transform: rotate(90deg);
     }
+    @media #{$desktop-device,$laptop-device}{
+        left: 9.5em;
+    }
 }
 .contenedorhover:hover{
     position: relative;
-    transform: translate(0px, -15px)
+    transform: translate(0px, -15px);
+    z-index: 1; 
 } 
 .contenedorhover{
+    z-index: 1; 
     transition: transform 220ms ease-out;
 }
 .overlay {

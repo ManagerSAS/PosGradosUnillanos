@@ -7,7 +7,7 @@
             </v-col>
         </v-row>
         <v-row justify="center" align="center">
-            <v-col justify="center" align="center"  cols="12" md="11" lg="9" sm="11">
+            <v-col justify="center" align="center"  cols="12" md="12" lg="10" sm="11">
                 <v-row  justify="center" align="center">
                     <v-col justify="center" align="center" cols="12" lg="12" xl="11" md="11" sm="12" >
                         <VueSlickCarousel v-bind="settings" :arrow="true" justify="center" align="center">
@@ -56,50 +56,50 @@ import VueSlickCarousel from 'vue-slick-carousel'
             {
                 mx:'mx-sm-15 mx-lg-0 mx-xl-15 mx-md-0', 
                 py1:'px-6 py-7',
-                icon:'/iconos/Calidad.png', 
+                icon:'/iconos/Calidad.webp', 
                 title:'Somos calidad', 
                 desc:'El Ministerio de Educación Nacional, mediante Resolución número 5310 del 8 de abril de 2022, otorgó la Acreditación Institucional en Alta Calidad a la Universidad de los Llanos'
             },
             {
                 mx:'mx-sm-15 mx-lg-15 mx-xl-15 px-xl-15 mx-md-0',
                 py1:'px-6 py-2',
-                icon:'/iconos/Maestros.png', 
+                icon:'/iconos/Maestros.webp', 
                 title:'¡Te enseñan Doctores!', 
                 desc:'Contamos con más de 100 doctores de orden local, regional, nacional e internacional para alcanzar una oferta académica de calidad para la Orinoquia'},
             {
                 mx:'mx-sm-15 mx-lg-5 mx-xl-15 mx-md-0',
                 py1:'px-6 py-2',
-                icon:'/iconos/Colciencias.png',
+                icon:'/iconos/Colciencias.webp',
                 title:'Estamos categorizados por Colciencias',  
                 desc:'Más del 80% de nuestros Doctores son categorizados por Colciencias.'},
             {
                 mx:'mx-sm-15 mx-lg-10 mx-xl-15 mx-md-0',
                 py1:'px-6 py-2',
-                icon:'/iconos/Investigacion.png',
+                icon:'/iconos/Investigacion.webp',
                 title:'Promovemos la investigación',  
                 desc:'Tenemos más de 10 investigadores senior con proyectos de alto impacto social y excelencia académica en procesos de cualificación.'},
             {
                 mx:'mx-sm-15 mx-lg-0 mx-xl-15 mx-md-0',
                 py1:'px-6 py-2',
-                icon:'/iconos/Masgrandedelaregion.png', 
+                icon:'/iconos/Masgrandedelaregion.webp', 
                 title:'¡Somos la Universidad más grande de la región!', 
                 desc:'El campus Barcelona, ubicado a 12 km del centro de la ciudad, abarca una extensión de 43.2 ha, y la sede San Antonio, de 2.67 ha, situada en sector céntrico de la capital.'},
             {
                 mx:'mx-sm-15 mx-lg-15 mx-xl-15 px-xl-15 mx-md-0',
                 py1:'px-6 py-2',
-                icon:'/iconos/SedeGranada.png', 
+                icon:'/iconos/SedeGranada.webp', 
                 title:'Tenemos sede en Granada', 
                 desc:'En nuestra sede Boquemonte ya se encuentra disponible la especialización en Gestión de Proyectos para el municipio de Granada.'},
             {
                 mx:'mx-sm-15 mx-lg-0 mx-xl-15 mx-md-0',
                 py1:'px-6 py-2',
-                icon:'/iconos/Dostorado.png',
+                icon:'/iconos/Dostorado.webp',
                 title:'Somos la única universidad con Doctorado',  
                 desc:'Reconocido por el Ministerio de Educación con registro calificado. SNIES 102256'},
             {
                 mx:'mx-sm-15 mx-lg-0 mx-xl-15 mx-md-0',
                 py1:'px-6 py-2',
-                icon:'/iconos/MediaColombia.png',
+                icon:'/iconos/MediaColombia.webp',
                 title:'Somos la universidad de media Colombia',  
                 desc:'Con más de 600 profesionales en la modalidad de formación de posgrados'},
         ],
@@ -115,7 +115,7 @@ import VueSlickCarousel from 'vue-slick-carousel'
                 {
                 "breakpoint": 1396,
                     "settings": {
-                        "slidesToShow": 2.5,
+                        "slidesToShow": 3,
                         "slidesToScroll": 1,
                         "infinite": true,
                         "dots": false

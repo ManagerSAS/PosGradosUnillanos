@@ -81,28 +81,28 @@
             return {
                 LogosRegulador:[
                     {
-                        src: "/iconos/log_gobiern.png",
+                        src: "/iconos/log-gobiern.webp",
                     },
                     {
-                        src: "/iconos/logo_suit.png",
+                        src: "/iconos/logo-suit.webp",
                     },
                     {
-                        src: "/iconos/snies.png",
+                        src: "/iconos/snies.webp",
                     },
                     {
-                        src: "/iconos/secop.jpg",
+                        src: "/iconos/secop.webp",
                     },
                     {
-                        src: "/iconos/compra-eficientew.png",
+                        src: "/iconos/compra-eficientew.webp",
                     },
                     {
-                        src: "/iconos/sigepw.png",
+                        src: "/iconos/sigepw.webp",
                     },
                     {
-                        src: "/iconos/minTic_2.png",
+                        src: "/iconos/minTic_2.webp",
                     },
                     {
-                        src: "/iconos/govco.png",
+                        src: "/iconos/govco.webp",
                     }
                 ]
             }

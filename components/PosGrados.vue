@@ -18,7 +18,7 @@
                         class="text-capitalize font-weight-thin"
                         style="border-radius:0; background-color: #1a212f; color: white;" 
                         @click="all()"
-                      >Todos <span class="text-lowercase"> los </span>  Posgrados</v-btn>
+                      >Todos <span class="text-lowercase"> &nbsp;los&nbsp;</span>  Posgrados</v-btn>
                     </v-col>
                     <v-col cols="12" md="3" sm="3" justify="center" align="center">
                       <v-btn
@@ -58,10 +58,10 @@
             </v-col>
           </v-row>
           <v-row justify="center" align="start">
-            <v-col   align="center"  cols="12" md="11" lg="10" xl="9" sm="12">
+            <v-col   align="center"  cols="12" md="11" lg="11" xl="9" sm="12">
                 <v-row  align="center">
-                    <v-col  align="center" cols="12" lg="4" md="4" sm="12" v-for="(inf, index) in information" :key="index">
-                        <div align="center" class="ma-2">
+                    <v-col  align-self="start" cols="12" lg="4" md="4" sm="12" v-for="(inf, index) in information" :key="index">
+                        <div  class="ma-2">
                             <div>
                                 <v-img :src="inf.icon" class="FotoPostGrado" alt="">
                                     <div class="overlayPosgrados"></div>
@@ -114,7 +114,7 @@
             {icon:'/posgrados/GestionAmbientalSostenibleMa.jpg',type:'Ma',title:'Maestría en', name:'Gestión Ambiental Sostenible', desc:'Profundiza y desarrolla conocimientos en gestión ambiental sostenible, con capacidad propositiva, liderazgo, convicciones éticas y disposición al trabajo interdisciplinar y en equipo.'},  
             {icon:'/posgrados/SistemasSosteniblesdeSalud-ProduccionAnimalTropicalma.jpg',type:'Ma',title:'Maestría en', name:'Sistemas Sostenibles de Salud - Producción Animal Tropical',desc:'Profundiza el área de las ciencias agrícolas y pecuarias, ciencias biológicas y ciencias naturales con conocimientos en agronomía.'},  
             {icon:'/posgrados/Acuicultura.jpg',type:'Ma',title:'Maestría en', name:'Acuicultura', desc:'Forma investigadores autónomos y críticos que puedan aportarle al desarrollo de la actividad acuícola a través de la investigación y la proyección social.'},          
-            {icon:'/posgrados/AcuiculturaAguasContinentalesEs.jpg',type:'Es',title:'Especialización en', name:'Acuicultura Aguas Continentales', desc:'Permita promover el desarrollo de la actividad utilizando racional y competitivamente los recursos existentes.'},  
+            {icon:'/posgrados/AcuiculturaAguasContinentalesEs1.jpg',type:'Es',title:'Especialización en', name:'Acuicultura Aguas Continentales', desc:'Permita promover el desarrollo de la actividad utilizando racional y competitivamente los recursos existentes.'},  
             {icon:'/posgrados/AdministraciondeNegocios.jpg',type:'Es',title:'Especialización en', name:'Administración de Negocios', desc:'Experto en el manejo de modelos y herramientas pertinentes para la toma de decisiones y la gestión en los negocios.'},  
             {icon:'/posgrados/GestiondelaCalidad.jpg',type:'Es',title:'Especialización en', name:'Gestión de la Calidad', desc:'Comprende los sistemas de gestión en el entorno empresarial. Mide, valora y aplica acciones correctivas que permitan el alcance de las políticas y objetivos de calidad propuestos.'},  
             {icon:'/posgrados/ProduccionTropicalSostenible.jpg',type:'Ma',title:'Maestría en', name:'Producción Tropical Sostenible', desc:'Forma conocimientos en las ciencias agrarias, biológicas, ambientales, administrativas agropecuarias y demás profesiones relacionadas con el sector de la producción agraria.'},          
@@ -122,7 +122,7 @@
             {icon:'/posgrados/EstudiosCulturalesMa.jpg',type:'Ma',title:'Maestría en', name:'Estudios Culturales', desc:'Generar procesos de transformación de la realidad social y política, con bases sólidas en procesos investigación y acción.'},          
             {icon:'/posgrados/EpidemiologiaMa.jpg',type:'Ma',title:'Maestría en', name:'Epidemiología', desc:'Genera evidencia científica a partir de la aplicación del método epidemiológico en el manejo de situaciones en el ámbito de salud y enfermedades para la integración de conocimientos, habilidades y técnicas.'},          
             {icon:'/posgrados/Educacion.jpg',type:'Ma',title:'Maestría en', name:'Educación', desc:'Construye un pensamiento educativo y pedagógico, que refleje la identidad de la región de la Orinoquía Colombiana.'},          
-            {icon:'/posgrados/AdministracionenSalud.jpg',type:'Es',title:'Especialización en', name:'Administración en Salud', desc:'Desarrolla el sistema de seguridad social integral, con principios, valores éticos y morales; basados en el humanismo y respeto de la dignidad humana.'},
+            {icon:'/posgrados/AdministracionenSalud1.jpg',type:'Es',title:'Especialización en', name:'Administración en Salud', desc:'Desarrolla el sistema de seguridad social integral, con principios, valores éticos y morales; basados en el humanismo y respeto de la dignidad humana.'},
             {icon:'/posgrados/EpidemiologiaEs.jpg',type:'Es',title:'Especialización en', name:'Epidemiología', desc:'Marca la ruta, estrategia y lineamientos para mitigar enfermedades y poder solventarlas de la mejor manera.	'},
             {icon:'/posgrados/SeguridadySaludenelTrabajoEs.jpg',type:'Es',title:'Especialización en', name:'Seguridad y Salud en el Trabajo', desc:'Implementa políticas y estrategias para el mejoramiento de las condiciones de salud laboral de las personas, enmarcadas en la alineación dinámica de los procesos de gestión humana.'},
             {icon:'/posgrados/AccionMotriz.jpg',type:'Es',title:'Especialización en', name:'Acción Motriz', desc:'Permite a su vez responder a las necesidades sociales del contexto educativo escolar, artístico, deportivo y de la salud de la región.'},  
