@@ -1,4 +1,4 @@
-<template>
+<template >
     <div id="contact" >
         <div class="intro-section bg-cover bg" >
             <v-container fluid >
@@ -159,9 +159,14 @@
 <style lang="scss">
 .bg{
     background-image: url('/banners/bannerescritorio.avif');
+    -webkit-background-image: url('/banners/bannerescritorio.avif');
+    -moz-background-image: url('/banners/bannerescritorio.jpg');
+    -o-background-image: url('/banners/bannerescritorio.jpg');
     @media #{$tablet-device,$small-mobile}{
-        background-image: url('/banners/Bannercel.webp');
-        background-size: 100% 100%;
+        background-image: url('/banners/bannercel1.webp');
+        -webkit-background-image: url('/banners/Bannercel1.avif');
+        -moz-background-image: url('/banners/Bannercel1.jpg');
+        -o-background-image: url('/banners/Bannercel1.jpg');
     }
 }
 </style>

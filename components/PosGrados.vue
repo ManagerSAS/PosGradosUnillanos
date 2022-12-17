@@ -76,10 +76,10 @@
                                 </v-img>
                             </div>
                             <div align="start" class="mt-2 mb-2">
-                                <p class="Text-Description">{{inf.desc | cadena}}</p> 
+                                <p class="Text-Description">{{inf.desc}}</p> 
                             </div>
-                            <div align="center">
-                                <v-btn hide-details style="border-radius:0" class="pa-0" width="200px" height="30px" color="#fbb03b" outlined dense >
+                            <div :class="inf.margen">
+                                <v-btn  hide-details style="border-radius:0;" target="_blanck" :href="inf.pdf"  width="200px" height="30px" color="#fbb03b" outlined dense >
                                     Descargar PDF
                                 </v-btn>
                             </div>
@@ -100,42 +100,230 @@
         dialog: false,
         infPosGrados:[],
         information: [
-            {icon:'/posgrados/GestionAmbientalSostenible.jpg',type:'Es',title:'Especialización en', name:'Gestión Ambiental Sostenible', desc:'Aplica la sostenibilidad a contextos naturales para orientar a las comunidades locales hacia modelos de desarrollo globalizados.'},
-            {icon:'/posgrados/IngenieriadeSoftware.jpg',type:'Es',title:'Especialización en', name:'Ingeniería de Software', desc:'Lidera, gestiona y ejecuta procesos de construcción y adaptación de software para las organizaciones.'},
-            {icon:'/posgrados/AdministraciondeNegocios.jpg',type:'Ma',title:'Maestría en', name:'Administración de Negocios', desc:'Pretende consolidar la comprensión de la teoría de la administración y su aplicación al desarrollo empresarial en la realidad económica y social.'},          
-            {icon:'/posgrados/SeguridadySaludenelTrabajoMa.jpg',type:'Ma',title:'Maestría en', name:'Seguridad y Salud en el Trabajo', desc:'Desarrolla la seguridad y salud en el trabajo de manera directa o indirecta en su gestión profesional o empresarial.'},          
-            {icon:'/posgrados/CienciasAgrarias.jpg',type:'Doc',title:'Doctorado en', name:'Ciencias Agrarias', desc:'Asume el compromiso de la ciencia con autonomía, responsabilidad, ética e idoneidad para la investigación, la docencia y el conocimiento.'},          
-            {icon:'/posgrados/SaludFamiliar.jpg',type:'Es',title:'Especialización en', name:'Salud Familiar', desc:'Gestiona y direcciona organizaciones de la Salud, experto en la toma de decisiones coherentes con la demanda de la población y los recursos disponibles.'},
-            {icon:'/posgrados/ProduccionAgricolatropicalSostenible.jpg',type:'Es',title:'Especialización en', name:'Producción Agrícola Tropical Sostenible', desc:'Fortalece el desarrollo de la producción agrícola y pecuaria del país, haciendo uso estratégico de las condiciones tropicales, mediante el desarrollo de sistemas productivos armónicos.'},
-            {icon:'/posgrados/GestiondeProyectos.jpg',type:'Es',title:'Especialización en', name:'Gestión de Proyectos', desc:'Profesionales con interés en el conocimiento, propuesta, desarrollo y Gestión de Proyectos de Inversión, Económica, Social, entre otros, con conocimientos básicos en inglés.'},
-            {icon:'/posgrados/SistemasRadar.jpg',type:'Es',title:'Especialización en', name:'RF y Sistemas Radar', desc:'Se desempeñen en el ámbito civil o militar, en áreas relacionadas con la ingeniería, especialmente Telecomunicaciones, Electrónica, Mecatrónica y Eléctrica.'},
-            {icon:'/posgrados/Finanzas.jpg',type:'Es',title:'Especialización en', name:'Finanzas', desc:'Propone alternativas financieras a las empresas en su ejercicio profesional, conscientes de la responsabilidad social que implica el manejo de la información financiera en los negocios.'},
-            {icon:'/posgrados/InstrumentacionyControlIndustrial.jpg',type:'Es',title:'Especialización en', name:'Instrumentación y Control Industrial', desc:'Desarrolla las habilidades y destrezas en el manejo de los principios físicos, modelamiento matemático de procesos industriales y científicos en el área de la automatización.'},
-            {icon:'/posgrados/GestionAmbientalSostenibleMa.jpg',type:'Ma',title:'Maestría en', name:'Gestión Ambiental Sostenible', desc:'Profundiza y desarrolla conocimientos en gestión ambiental sostenible, con capacidad propositiva, liderazgo, convicciones éticas y disposición al trabajo interdisciplinar y en equipo.'},  
-            {icon:'/posgrados/SistemasSosteniblesdeSalud-ProduccionAnimalTropicalma.jpg',type:'Ma',title:'Maestría en', name:'Sistemas Sostenibles de Salud - Producción Animal Tropical',desc:'Profundiza el área de las ciencias agrícolas y pecuarias, ciencias biológicas y ciencias naturales con conocimientos en agronomía.'},  
-            {icon:'/posgrados/Acuicultura.jpg',type:'Ma',title:'Maestría en', name:'Acuicultura', desc:'Forma investigadores autónomos y críticos que puedan aportarle al desarrollo de la actividad acuícola a través de la investigación y la proyección social.'},          
-            {icon:'/posgrados/AcuiculturaAguasContinentalesEs1.jpg',type:'Es',title:'Especialización en', name:'Acuicultura Aguas Continentales', desc:'Permita promover el desarrollo de la actividad utilizando racional y competitivamente los recursos existentes.'},  
-            {icon:'/posgrados/AdministraciondeNegocios.jpg',type:'Es',title:'Especialización en', name:'Administración de Negocios', desc:'Experto en el manejo de modelos y herramientas pertinentes para la toma de decisiones y la gestión en los negocios.'},  
-            {icon:'/posgrados/GestiondelaCalidad.jpg',type:'Es',title:'Especialización en', name:'Gestión de la Calidad', desc:'Comprende los sistemas de gestión en el entorno empresarial. Mide, valora y aplica acciones correctivas que permitan el alcance de las políticas y objetivos de calidad propuestos.'},  
-            {icon:'/posgrados/ProduccionTropicalSostenible.jpg',type:'Ma',title:'Maestría en', name:'Producción Tropical Sostenible', desc:'Forma conocimientos en las ciencias agrarias, biológicas, ambientales, administrativas agropecuarias y demás profesiones relacionadas con el sector de la producción agraria.'},          
-            {icon:'/posgrados/EstudiosdeDesarrolloLocalMa.jpg',type:'Ma',title:'Maestría en', name:'Estudios de Desarrollo Local', desc:'Profesionales en diversas disciplinas y áreas del conocimiento con experiencia de trabajo en cualquier área vinculada al desarrollo desde instituciones públicas, civiles o privadas'},          
-            {icon:'/posgrados/EstudiosCulturalesMa.jpg',type:'Ma',title:'Maestría en', name:'Estudios Culturales', desc:'Generar procesos de transformación de la realidad social y política, con bases sólidas en procesos investigación y acción.'},          
-            {icon:'/posgrados/EpidemiologiaMa.jpg',type:'Ma',title:'Maestría en', name:'Epidemiología', desc:'Genera evidencia científica a partir de la aplicación del método epidemiológico en el manejo de situaciones en el ámbito de salud y enfermedades para la integración de conocimientos, habilidades y técnicas.'},          
-            {icon:'/posgrados/Educacion.jpg',type:'Ma',title:'Maestría en', name:'Educación', desc:'Construye un pensamiento educativo y pedagógico, que refleje la identidad de la región de la Orinoquía Colombiana.'},          
-            {icon:'/posgrados/AdministracionenSalud1.jpg',type:'Es',title:'Especialización en', name:'Administración en Salud', desc:'Desarrolla el sistema de seguridad social integral, con principios, valores éticos y morales; basados en el humanismo y respeto de la dignidad humana.'},
-            {icon:'/posgrados/EpidemiologiaEs.jpg',type:'Es',title:'Especialización en', name:'Epidemiología', desc:'Marca la ruta, estrategia y lineamientos para mitigar enfermedades y poder solventarlas de la mejor manera.	'},
-            {icon:'/posgrados/SeguridadySaludenelTrabajoEs.jpg',type:'Es',title:'Especialización en', name:'Seguridad y Salud en el Trabajo', desc:'Implementa políticas y estrategias para el mejoramiento de las condiciones de salud laboral de las personas, enmarcadas en la alineación dinámica de los procesos de gestión humana.'},
-            {icon:'/posgrados/AccionMotriz.jpg',type:'Es',title:'Especialización en', name:'Acción Motriz', desc:'Permite a su vez responder a las necesidades sociales del contexto educativo escolar, artístico, deportivo y de la salud de la región.'},  
-            {icon:'/posgrados/SaludFamiliaryComunitaria.jpg',type:'Es',title:'Maestría en', name:'Salud Familiar y Comunitaria', desc:'Forma investigadores con valores y principios éticos y fundamentación teórica, epistemológica y metodológica desde las Ciencias Sociales y de Salud.'},  
+            // {
+            //     margen:'mt-xl-8 mt-lg-8',
+            //     icon:'/posgrados/GestionAmbientalSostenible.jpg',
+            //     type:'Es',
+            //     title:'Especialización en', 
+            //     name:'Gestión Ambiental Sostenible', 
+            //     desc:'Aplica la sostenibilidad a contextos naturales para orientar a las comunidades locales hacia modelos de desarrollo globalizados.',
+            //     pdf:'/PdfPosgrado/Especializaciones.pdf'},
+            // {
+            //     margen:'mt-xl-8 mt-lg-8',
+            //     icon:'/posgrados/IngenieriadeSoftware.jpg',
+            //     type:'Es',
+            //     title:'Especialización en', 
+            //     name:'Ingeniería de Software', 
+            //     desc:'Lidera, gestiona y ejecuta procesos de construcción y adaptación de software para las organizaciones. ',
+            //     pdf:'/PdfPosgrado/Especializaciones.pdf'},
+            // {
+            //     margen:'',
+            //     icon:'/posgrados/AdministraciondeNegocios.jpg',
+            //     type:'Ma',
+            //     title:'Maestría en', 
+            //     name:'Administración de Negocios', 
+            //     desc:'Pretende consolidar la comprensión de la teoría de la administración y su aplicación al desarrollo empresarial en la realidad económica y social.',
+            //     pdf:'/PdfPosgrado/Maestrias/.pdf'},          
+            // {
+            //     margen:'mt-xl-8 mt-lg-8',
+            //     icon:'/posgrados/SeguridadySaludenelTrabajoMa.jpg',
+            //     type:'Ma',
+            //     title:'Maestría en', 
+            //     name:'Seguridad y Salud en el Trabajo', 
+            //     desc:'Desarrolla la seguridad y salud en el trabajo de manera directa o indirecta en su gestión profesional o empresarial.',
+            //     pdf:'/PdfPosgrado/Maestrias/.pdf'},          
+            // {
+            //     margen:'mt-xl-8 mt-lg-8',
+            //     icon:'/posgrados/CienciasAgrarias.jpg',
+            //     type:'Doc',
+            //     title:'Doctorado en', 
+            //     name:'Ciencias Agrarias', 
+            //     desc:'Asume el compromiso de la ciencia con autonomía, responsabilidad, ética e idoneidad para la investigación, la docencia y el conocimiento.',
+            //     pdf:'/PdfPosgrado/Doctorados/.pdf'},          
+            // {
+            //     margen:'mt-lg-6',
+            //     icon:'/posgrados/SaludFamiliar.jpg',
+            //     type:'Es',
+            //     title:'Especialización en', 
+            //     name:'Salud Familiar', 
+            //     desc:'Gestiona y direcciona organizaciones de la Salud, experto en la toma de decisiones coherentes con la demanda de la población y los recursos disponibles.',
+            //     pdf:'/PdfPosgrado/Especializaciones.pdf'},
+            // {
+            //     margen:'',
+            //     icon:'/posgrados/ProduccionAgricolatropicalSostenible.jpg',
+            //     type:'Es',
+            //     title:'Especialización en', 
+            //     name:'Producción Agrícola Tropical Sostenible', 
+            //     desc:'Fortalece el desarrollo de la producción agrícola y pecuaria del país, haciendo uso estratégico de las condiciones tropicales, mediante el desarrollo de sistemas productivos armónicos.',
+            //     pdf:'/PdfPosgrado/Especializaciones.pdf'},
+            // {
+            //     margen:'',
+            //     icon:'/posgrados/GestiondeProyectos.jpg',
+            //     type:'Es',
+            //     title:'Especialización en', 
+            //     name:'Gestión de Proyectos', 
+            //     desc:'Profesionales con interés en el conocimiento, propuesta, desarrollo y Gestión de Proyectos de Inversión, Económica, Social, entre otros, con conocimientos básicos en inglés.',
+            //     pdf:'/PdfPosgrado/Especializaciones.pdf'},
+            // {
+            //     margen:'',
+            //     icon:'/posgrados/SistemasRadar.jpg',
+            //     type:'Es',
+            //     title:'Especialización en', 
+            //     name:'RF y Sistemas Radar', 
+            //     desc:'Se desempeñen en el ámbito civil o militar, en áreas relacionadas con la ingeniería, especialmente Telecomunicaciones, Electrónica, Mecatrónica y Eléctrica.',
+            //     pdf:'/PdfPosgrado/Especializaciones.pdf'},
+            // {
+            //     margen:'',
+            //     icon:'/posgrados/Finanzas.jpg',
+            //     type:'Es',
+            //     title:'Especialización en', 
+            //     name:'Finanzas', 
+            //     desc:'Propone alternativas financieras a las empresas en su ejercicio profesional, conscientes de la responsabilidad social que implica el manejo de la información financiera en los negocios.',
+            //     pdf:'/PdfPosgrado/Especializaciones.pdf'},
+            // {
+            //     margen:'',
+            //     icon:'/posgrados/InstrumentacionyControlIndustrial.jpg',
+            //     type:'Es',
+            //     title:'Especialización en', 
+            //     name:'Instrumentación y Control Industrial', 
+            //     desc:'Desarrolla las habilidades y destrezas en el manejo de los principios físicos, modelamiento matemático de procesos industriales y científicos en el área de la automatización.',
+            //     pdf:'/PdfPosgrado/Especializaciones.pdf'},
+            // {
+            //     margen:'',
+            //     icon:'/posgrados/GestionAmbientalSostenibleMa.jpg',
+            //     type:'Ma',
+            //     title:'Maestría en', 
+            //     name:'Gestión Ambiental Sostenible', 
+            //     desc:'Profundiza y desarrolla conocimientos en gestión ambiental sostenible, con capacidad propositiva, liderazgo, convicciones éticas y disposición al trabajo interdisciplinar y en equipo.',
+            //     pdf:'/PdfPosgrado/Maestrias/.pdf'},  
+            // {
+            //     margen:'mt-xl-8 mt-lg-8',
+            //     icon:'/posgrados/SistemasSosteniblesdeSalud-ProduccionAnimalTropicalma.jpg',
+            //     type:'Ma',
+            //     title:'Maestría en', 
+            //     name:'Sistemas Sostenibles de Salud - Producción Animal Tropical',
+            //     desc:'Profundiza el área de las ciencias agrícolas y pecuarias, ciencias biológicas y ciencias naturales con conocimientos en agronomía.',
+            //     pdf:'/PdfPosgrado/Maestrias/.pdf'},  
+            // {
+            //     margen:'mt-lg-8',
+            //     icon:'/posgrados/Acuicultura.jpg',
+            //     type:'Ma',
+            //     title:'Maestría en', 
+            //     name:'Acuicultura', 
+            //     desc:'Forma investigadores autónomos y críticos que puedan aportarle al desarrollo de la actividad acuícola a través de la investigación y la proyección social.',
+            //     pdf:'/PdfPosgrado/Maestrias/.pdf'},          
+            // {
+            //     margen:'mt-xl-8 mt-lg-8',
+            //     icon:'/posgrados/AcuiculturaAguasContinentalesEs1.jpg',
+            //     type:'Es',
+            //     title:'Especialización en', 
+            //     name:'Acuicultura Aguas Continentales', 
+            //     desc:'Permita promover el desarrollo de la actividad utilizando racional y competitivamente los recursos existentes.',
+            //     pdf:'/PdfPosgrado/Especializaciones.pdf'
+            // },  
+            {
+                margen:'mt-xl-8 mt-lg-8',
+                icon:'/posgrados/AdministraciondeNegocios.jpg',
+                type:'Es',
+                title:'Especialización en', 
+                name:'Administración de Negocios', 
+                desc:'Experto en el manejo de modelos y herramientas pertinentes para la toma de decisiones y la gestión en los negocios.',
+                pdf:'/PdfPosgrados/Especializaciones/EsAdminstracion_de_negocios.pdf'},  
+            // {
+            //     margen:'',
+            //     icon:'/posgrados/GestiondelaCalidad.jpg',
+            //     type:'Es',
+            //     title:'Especialización en', 
+            //     name:'Gestión de la Calidad', 
+            //     desc:'Comprende los sistemas de gestión en el entorno empresarial. Mide, valora y aplica acciones correctivas que permitan el alcance de las políticas y objetivos de calidad propuestos.',
+            //     pdf:'/PdfPosgrado/Especializaciones.pdf'
+            // },  
+            // {
+            //     margen:'',
+            //     icon:'/posgrados/ProduccionTropicalSostenible.jpg',
+            //     type:'Ma',
+            //     title:'Maestría en', 
+            //     name:'Producción Tropical Sostenible', 
+            //     desc:'Forma conocimientos en las ciencias agrarias, biológicas, ambientales, administrativas agropecuarias y demás profesiones relacionadas con el sector de la producción agraria.',
+            //     pdf:'/PdfPosgrado/Maestrias/.pdf'
+            // },          
+            // {
+            //     margen:'mt-xl-8 mt-lg-8',
+            //     icon:'/posgrados/EstudiosdeDesarrolloLocalMa.jpg',
+            //     type:'Ma',
+            //     title:'Maestría en', 
+            //     name:'Estudios de Desarrollo Local', 
+            //     desc:'Profesionales en diversas disciplinas y áreas del conocimiento con experiencia de trabajo en cualquier área vinculada al desarrollo desde instituciones públicas, civiles o privadas',
+            //     pdf:'/PdfPosgrado/Maestrias/.pdf'
+            // },          
+            // {
+            //     margen:'mt-xl-12 mt-lg-12' ,
+            //     icon:'/posgrados/EstudiosCulturalesMa.jpg',
+            //     type:'Ma',
+            //     title:'Maestría en', 
+            //     name:'Estudios Culturales', 
+            //     desc:'Generar procesos de transformación de la realidad social y política, con bases sólidas en procesos investigación y acción.',
+            //     pdf:'/PdfPosgrado/Maestrias/.pdf'},          
+            // {
+            //     margen:'mt-lg-7',
+            //     icon:'/posgrados/EpidemiologiaMa.jpg',
+            //     type:'Ma',
+            //     title:'Maestría en', 
+            //     name:'Epidemiología', 
+            //     desc:'Genera evidencia científica a partir de la aplicación del método epidemiológico en el manejo de situaciones en el ámbito de salud y enfermedades para la integración de conocimientos, habilidades y técnicas.',
+            //     pdf:'/PdfPosgrado/Maestrias/.pdf'},          
+            // {
+            //     margen:'mt-xl-8 mt-lg-8',
+            //     icon:'/posgrados/Educacion.jpg',
+            //     type:'Ma',
+            //     title:'Maestría en', 
+            //     name:'Educación', 
+            //     desc:'Construye un pensamiento educativo y pedagógico, que refleje la identidad de la región de la Orinoquía Colombiana.',
+            //     pdf:'/PdfPosgrado/Maestrias/.pdf'},          
+            // {
+            //     margen:'mt-lg-8',
+            //     icon:'/posgrados/AdministracionenSalud1.jpg',
+            //     type:'Es',
+            //     title:'Especialización en', 
+            //     name:'Administración en Salud', 
+            //     desc:'Desarrolla el sistema de seguridad social integral, con principios, valores éticos y morales; basados en el humanismo y respeto de la dignidad humana.',
+            //     pdf:'/PdfPosgrado/Especializaciones.pdf'},
+            // {
+            //     margen:'mt-xl-8 mt-lg-10',
+            //     icon:'/posgrados/EpidemiologiaEs.jpg',
+            //     type:'Es',
+            //     title:'Especialización en', 
+            //     name:'Epidemiología', 
+            //     desc:'Marca la ruta, estrategia y lineamientos para mitigar enfermedades y poder solventarlas de la mejor manera.',
+            //     pdf:'/PdfPosgrado/Especializaciones.pdf'},
+            // {
+            //     margen:'',
+            //     icon:'/posgrados/SeguridadySaludenelTrabajoEs.jpg',
+            //     type:'Es',
+            //     title:'Especialización en', 
+            //     name:'Seguridad y Salud en el Trabajo', 
+            //     desc:'Implementa políticas y estrategias para el mejoramiento de las condiciones de salud laboral de las personas, enmarcadas en la alineación dinámica de los procesos de gestión humana.',
+            //     pdf:'/PdfPosgrado/Especializaciones.pdf'},
+            // {
+            //     margen:'mt-xl-8 mt-lg-8',
+            //     icon:'/posgrados/AccionMotriz.jpg',
+            //     type:'Es',
+            //     title:'Especialización en', 
+            //     name:'Acción Motriz', 
+            //     desc:'Permite a su vez responder a las necesidades sociales del contexto educativo escolar, artístico, deportivo y de la salud de la región.',
+            //     pdf:'/PdfPosgrado/Especializaciones.pdf'},  
+            // {
+            //     margen:'mt-lg-8',
+            //     icon:'/posgrados/SaludFamiliaryComunitaria.jpg',
+            //     type:'Es',
+            //     title:'Maestría en', 
+            //     name:'Salud Familiar y Comunitaria', 
+            //     desc:'Forma investigadores con valores y principios éticos y fundamentación teórica, epistemológica y metodológica desde las Ciencias Sociales y de Salud.',
+            //     pdf:'/PdfPosgrado/Maestrias/.pdf'},  
         ],
     }),
     created(){
         this.infPosGrados = this.information;
-    },
-    filters:{
-        // cadena(value){
-        //     return value.substr(0,110)
-        // }
     },
     methods:{
         filter(typePos){

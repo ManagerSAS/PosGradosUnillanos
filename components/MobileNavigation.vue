@@ -5,7 +5,7 @@
             <div class="mobile-header">
                 <div class="logo">
                     <n-link to="/">
-                        <img src="/logo.png" width="150" alt="site logo">
+                        <v-img preload loading="lazy" fit="cover" src="/logo.png" width="150" alt="site logo"/>
                     </n-link>
                 </div>
                 <button class="mobile-close-btn" @click="mobiletoggleClass('removeClass', 'show-mobile-menu')"></button>

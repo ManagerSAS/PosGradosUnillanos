@@ -2,7 +2,7 @@
   <v-app>
     <client-only >
       <v-main>
-        <Nuxt />
+        <Nuxt keep-alive :keep-alive-props="{ exclude: ['modal'] }"/>
       </v-main>
     </client-only>
   </v-app>

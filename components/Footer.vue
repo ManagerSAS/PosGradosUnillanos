@@ -63,7 +63,7 @@
             </div>
             <v-row align="center" justify="center">
                 <v-col align="center" justify="center" v-for="({src}, index) in LogosRegulador" :key="index">
-                    <img height="50" :src="src" alt="">
+                    <img preload loading="lazy" max-height="50"  class="logos" :src="src" alt=""/>
                 </v-col>
             </v-row>
             <div class="row">
@@ -71,7 +71,6 @@
                     <p class="copyright white--text">&copy; 2022 <i class="fa fa-heart text-danger"></i> Desarrollado por <a href="https://www.agenciamanager.com" target="_blank" >Manager ~ El equipo para tu marca</a></p>
                 </div>
             </div>
-            <!-- Footer Copyright End -->
         </div>
     </div>
 </template>

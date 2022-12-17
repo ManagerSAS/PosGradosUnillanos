@@ -7,7 +7,7 @@
                     <div class="col-auto d-flex ">
                         <div class="header-logo ml-lg-10 ml-md-0 mt-md-5">
                             <n-link to="/">
-                                <img class="dark-logo" src="../static/logo.webp" alt="Agency Logo"/>
+                                <v-img preload loading="lazy" fit="cover" class="dark-logo" src="/logo.webp" alt="Agency Logo"/>
                             </n-link>
                         </div>
                     </div>

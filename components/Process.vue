@@ -7,7 +7,7 @@
             </v-col>
         </v-row>
         <v-row justify="center" align="center" class="mt-8 ma-2">
-            <v-col justify="center" align="center" cols="12" md="11" lg="10" xl="9" sm="12" >
+            <v-col justify="center" align="center" cols="12" md="11" lg="11" xl="9" sm="12" >
                 <v-row justify="center" align="center">
                     <v-col cols="12" md="3" lg="3" xl="3" class="contenedorhover">
                         <v-card
@@ -19,7 +19,7 @@
                         >
                             <v-img 
                                 height="200"
-                                src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+                                src="pasoApaso/paso1.jpg"
                             >
                         </v-img>
                             <v-btn
@@ -54,7 +54,7 @@
                         >
                             <v-img
                                 height="200"
-                                src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+                                src="pasoApaso/paso2.jpg"
                             ></v-img>
                             <v-btn
                                 align="end"
@@ -87,7 +87,7 @@
                         >
                             <v-img
                                 height="200"
-                                src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+                                src="pasoApaso/paso3.jpg"
                             ></v-img><div class="overlay"></div>
                             <v-btn
                                 align="end"
@@ -119,7 +119,7 @@
                         >
                             <v-img
                                 height="200"
-                                src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+                                src="pasoApaso/paso4.jpg"
                             ></v-img><div class="overlay"></div>
                             <br>
                             <div class="mr-5 ml-5">
@@ -143,11 +143,14 @@
     @media #{$Cel-Small,$Cel-Large,$tablet-device}{
         left: 0;
         z-index: 1; 
-        top: 6.5em;
+        top: 8.2em;
         transform: rotate(90deg);
     }
-    @media #{$desktop-device,$laptop-device}{
+    @media #{$desktop-device}{
         left: 9.5em;
+    }
+    @media #{$laptop-device}{
+        left: 11.2em;
     }
 }
 .contenedorhover:hover{
