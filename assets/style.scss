@@ -18,6 +18,12 @@
     line-height: 0.9em;
     font-family: 'Gotham', sans-serif;
 }
+.text-Gracias{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 0.9em;
+    font-family: 'Gotham', sans-serif;
+}
 .font-gotham{
     font-family: 'Gotham', sans-serif;
 }  
@@ -45,6 +51,12 @@
     font-size: 14px;
     line-height: normal;
     text-align: justify;
+}
+.text-success{
+    font-family: 'Gotham', sans-serif;
+    font-size: 14px;
+    line-height: normal;
+    text-align: center;
 }
 .Text-Description1{
     font-family: 'Gotham', sans-serif;
@@ -157,4 +169,18 @@
 }
 .line-height{
     line-height: 1em;
+}
+.rotacionSuccess{
+    animation: bounce 1s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+    animation-iteration-count: infinite;
+}
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 20px, 0);
+    }
 }

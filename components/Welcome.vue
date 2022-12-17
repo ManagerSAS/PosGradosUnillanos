@@ -140,6 +140,17 @@
                                     :color="colorSnack"
                                     rounded="pill"
                                 > {{ message }} </v-snackbar>
+                                <v-dialog
+                                    v-model="dialogSuccess"
+                                    persistent
+                                    max-width="290"
+                                    >
+                                    <v-card class="pa-5" justify="center" align="center">
+                                        <v-img width="100" class="rotacionSuccess" src="/iconos/exito.png"></v-img>
+                                       <p class="text-Gracias mt-2">¡Gracias por tu información!</p> 
+                                       <p class="text-success">Pronto uno de nuestros asesores de posgrados se comunicará contigo</p>
+                                    </v-card>
+                                </v-dialog>
                             </v-col>
                         </v-row>
                         <v-row justify="center" align="center">
@@ -175,6 +186,7 @@ import Post from './Post/Post'
   export default {
     data: () => ({
         btn: true,
+        dialogSuccess:false,
         dialogPoliticas: false,
         snackbar: false,
         message: '',
@@ -290,6 +302,8 @@ import Post from './Post/Post'
                     this.message = 'Su información fue enviada con exito'
                     this.$refs.formulario.reset()
                     this.loading = false
+                    this.dialogSuccess=true,
+                    setTimeout(()=>{ this.dialogSuccess = false },3000)
                 }
                 else{
                     this.loading = false
