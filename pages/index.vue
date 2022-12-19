@@ -25,6 +25,9 @@ import CallToAction from '~/components/CallToAction.vue';
 import Politicas from '~/components/Politicas.vue';
 
 export default {
-    components: { Header, Welcome, About, PosGrados, Process, Footer, MobileNavigation, Frequent, CallToAction, Politicas }
+    components: { Header, Welcome, About, PosGrados, Process, Footer, MobileNavigation, Frequent, CallToAction, Politicas },
+    method:{
+      
+    }
 }
 </script>

@@ -19,6 +19,18 @@ export default {
   },
   script: [
     { hid: 'stripe', src: 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js#038;ver=2.2.4',id:'jquery-js', defer: true },
+    // {
+    //   children: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    //   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    //   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    //   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    //   })(window,document,'script','dataLayer','GTM-W54X9GK');
+    // `,
+    //   type: 'text/javascript',
+    //   src:'https://www.googletagmanager.com/ns.html?id=GTM-W54X9GK',
+    //   async: true,
+    //   mode: 'client',
+    // }
     // {src:'pixel.js', type: 'text/javascript'}
   ],
   router: {
@@ -31,6 +43,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '@Plugins/tag.js',
+    // '@/plugins/analytics.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -40,15 +54,29 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    '@nuxtjs/google-analytics',
+    // '@nuxtjs/google-gtag',
   ],
-
+  googleAnalytics: {
+    id: 'G-ND8FB3DV41'
+  },
+  publicRuntimeConfig: {
+    googleAnalytics: {
+      id: '4366253190'
+    }
+  },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxt/image',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     'nuxt-facebook-pixel-module',
+    
+     ['@nuxtjs/google-tag-manager', { id: 'GTM-W54X9GK' }],
   ],
+  // gtm:{
+  //   id:'GTM-W54X9GK'
+  // },
   facebook: {
     /* module options */
     track: 'PageView',

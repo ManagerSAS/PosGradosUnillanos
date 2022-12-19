@@ -273,6 +273,8 @@ import Post from './Post/Post'
         setTimeout(()=>{ this.preloader = false },2000)
     },
     methods:{
+       
+
         async Enviar(){
             this.btn= false
             this.loading = true
