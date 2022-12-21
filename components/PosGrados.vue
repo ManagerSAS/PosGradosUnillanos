@@ -237,7 +237,7 @@
             },  
             {
                 margen:'mt-xl-8 mt-lg-8',
-                icon:'/posgrados/AdministraciondeNegocios.jpg',
+                icon:'/posgrados/AdministracionedeNegociosEs.jpg',
                 type:'Es',
                 title:'Especialización en', 
                 name:'Administración de Negocios', 

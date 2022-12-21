@@ -169,8 +169,8 @@
 </template>
 <style lang="scss">
 .bg{
-    background-image: url('/banners/bannerescritorio.avif');
-    -webkit-background-image: url('/banners/bannerescritorio.avif');
+    background-image: url('/banners/bannerescritorio.webp');
+    -webkit-background-image: url('/banners/bannerescritorio.webp');
     -moz-background-image: url('/banners/bannerescritorio.jpg');
     -o-background-image: url('/banners/bannerescritorio.jpg');
     @media #{$tablet-device,$small-mobile}{
