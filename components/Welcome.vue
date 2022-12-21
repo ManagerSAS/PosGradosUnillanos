@@ -279,6 +279,7 @@ import Post from './Post/Post'
             this.btn= false
             this.loading = true
             this.snackbar = true
+
             this.colorSnack = 'green accent-4'
             this.message = 'Se esta procesando su informacion por favor espere...'
             const hoy = new Date();
@@ -300,6 +301,7 @@ import Post from './Post/Post'
                     this.loading = false
                     this.snackbar = true
                     this.btn= true
+                    dataLayer.push({event: "form_submit"})
                     this.colorSnack = 'green accent-4'
                     this.message = 'Su información fue enviada con exito'
                     this.$refs.formulario.reset()
