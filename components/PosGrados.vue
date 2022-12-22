@@ -177,7 +177,7 @@
                 icon:'/posgrados/SistemasRadar.jpg',
                 type:'Es',
                 title:'Especialización en', 
-                name:'RF y Sistemas Radar', 
+                name:'Sensores RF y Sistemas Radar', 
                 desc:'Se desempeñen en el ámbito civil o militar, en áreas relacionadas con la ingeniería, especialmente Telecomunicaciones, Electrónica, Mecatrónica y Eléctrica.',
                 pdf:'/PdfPosgrados/Especializaciones/14.Sensores_de_rf_y_sistemas_radar.pdf'
             },
@@ -336,7 +336,7 @@
             {
                 margen:'mt-lg-8',
                 icon:'/posgrados/SaludFamiliaryComunitaria.jpg',
-                type:'Es',
+                type:'Ma',
                 title:'Maestría en', 
                 name:'Salud Familiar y Comunitaria', 
                 desc:'Forma investigadores con valores y principios éticos y fundamentación teórica, epistemológica y metodológica desde las Ciencias Sociales y de Salud.',

@@ -169,15 +169,15 @@
 </template>
 <style lang="scss">
 .bg{
-    background-image: url('/banners/bannerescritorio.webp');
-    -webkit-background-image: url('/banners/bannerescritorio.webp');
-    -moz-background-image: url('/banners/bannerescritorio.jpg');
-    -o-background-image: url('/banners/bannerescritorio.jpg');
+    background-image: url('/banners/bannerescritorio.jpg')!important;
+    -webkit-background-image: url('/banners/bannerescritorio.webp')!important;
+    -moz-background-image: url('/banners/bannerescritorio.jpg')!important;
+    -o-background-image: url('/banners/bannerescritorio.jpg')!important;
     @media #{$tablet-device,$small-mobile}{
-        background-image: url('/banners/Bannercel.webp');
-        -webkit-background-image: url('/banners/Bannercel.jpg');
-        -moz-background-image: url('/banners/Bannercel.jpg');
-        -o-background-image: url('/banners/Bannercel.jpg');
+        background-image: url('/banners/Bannercel.webp')!important;
+        -webkit-background-image: url('/banners/Bannercel.jpg')!important;
+        -moz-background-image: url('/banners/Bannercel.jpg')!important;
+        -o-background-image: url('/banners/Bannercel.jpg')!important;
     }
 }
 </style>
